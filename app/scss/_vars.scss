@@ -1,0 +1,21 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-dark: #191919;
+  --color-bg: #f8f8f8;
+  --color-accent: #ffe02f;
+}
+
+// * breakpointsMaxW
+$bp-container: 1230px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-360: 360.98px;
+
+// *=== Fonts
+$Montserrat: 'Montserrat';
+$Circe: 'Circe';
+$TTCommons: 'TT Commons';

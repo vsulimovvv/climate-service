@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Клим Сервис</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <div class="breadcrumbs breadcrumbs--left">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Установка</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active">
+                Демонтаж сплит-системы с сохранением фреона
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="main">
+        <div class="grid">
+          <div class="container">
+            <div class="grid__content">
+              <aside class="aside">
+                <section class="aside__box submit-box">
+                  <div class="submit-box__top">
+                    <h2 class="submit-box__title">
+                      Оставьте <br />
+                      заявку
+                    </h2>
+                    <p class="submit-box__text">
+                      Введите данные и мы свяжемся с вами в ближайшее время.
+                    </p>
+                  </div>
+                  <form class="form-submit">
+                    <div class="form-submit__group">
+                      <input
+                        class="form-submit__input"
+                        type="text"
+                        placeholder="Имя"
+                        required
+                      />
+                    </div>
+                    <div class="form-submit__group">
+                      <input
+                        class="form-submit__input"
+                        type="text"
+                        placeholder="Имя"
+                        required
+                      />
+                    </div>
+                    <div class="form-submit__group">
+                      <select class="select">
+                        <option value="1">Выберите услугу</option>
+                        <option value="2">Выберите услугу</option>
+                        <option value="3">Выберите услугу</option>
+                      </select>
+                    </div>
+
+                    <button
+                      class="form-submit__btn btn btn--transparent"
+                      type="button"
+                    >
+                      ОСТАВИТЬ ЗАЯВКУ
+                    </button>
+                  </form>
+                </section>
+
+                <section
+                  class="aside__box discount-box"
+                  style="background-image: url('images/content/discount.jpg')"
+                >
+                  <h2 class="discount-box__title">
+                    СКИДКА 10% <span> НА ПЕРЫЙ ЗАКАЗ</span>
+                  </h2>
+
+                  <button class="discount-box__btn btn">вызвать мастера</button>
+                </section>
+
+                <section class="aside__box cleaning-box">
+                  <div class="cleaning-box__offer">
+                    <h2 class="cleaning-box__title">ЧИСТКА КОНДИЦИОНЕРА</h2>
+
+                    <p class="cleaning-box__text">ОТ 1 790 руб.</p>
+                  </div>
+                  <div class="cleaning-box__img">
+                    <img
+                      src="images/content/conditioner.png"
+                      alt="Кондиционер"
+                    />
+                  </div>
+
+                  <button class="cleaning-box__btn btn" type="button">
+                    Вызвать мастера
+                  </button>
+                </section>
+              </aside>
+              <div class="grid__right">
+                @include('./components/_articles.html')
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @include('./components/_request.html')
+        @include('./components/_contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=7BujL88OLnw -->
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

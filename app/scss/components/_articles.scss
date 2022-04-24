@@ -1,0 +1,33 @@
+.articles {
+  font-family: $TTCommons;
+
+  &__preview {
+    @include adaptive-value('margin-bottom', 40, 25, 1);
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #595959;
+    font-weight: 400;
+    
+    &:not(:last-child) {
+      @include adaptive-value('margin-bottom', 30, 20, 1);
+    }
+
+    P {
+      &:not(:last-child) {
+        @include adaptive-value('margin-bottom', 30, 20, 1);
+      }
+    }
+  }
+
+  &__title {
+    @include adaptive-value('font-size', 35, 25, 1);
+    @include adaptive-value('margin-bottom', 35, 15, 1);
+    line-height: 1.25;
+    font-weight: 800;
+    color: #282828;
+  }
+
+}

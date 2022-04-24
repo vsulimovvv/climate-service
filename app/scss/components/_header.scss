@@ -1,0 +1,107 @@
+.header {
+  padding: 30px 0;
+  background-color: var(--color-white);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #191919;
+    padding-left: 40px;
+    position: relative;
+    transition: 150ms ease;
+
+    @include breakpointsMaxW($bp-container) {
+      font-size: calc(16px + (18 - 16) * ((100vw - 991px) / (1230 - 991)));
+      padding-left: calc(30px + (40 - 30) * ((100vw - 991px) / (1230 - 991)));
+    }
+    @include breakpointsMaxW($bp-991) {
+      font-size: 18px;
+      padding-left: 40px;
+    }
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &::after {
+      @include elDef();
+      width: 22px;
+      height: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      @include maskImage(url('../images/content/phone-icon.png'), contain);
+      background-color: #00ad57;
+    }
+  }
+
+  &__btn {
+    @include breakpointsMaxW($bp-container) {
+      font-size: calc(13px + (17 - 13) * ((100vw - 991px) / (1230 - 991)));
+    }
+  }
+  &__toggle {
+    display: none;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 350ms ease-in;
+
+      &-line {
+        border-radius: 3px;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-dark);
+        position: relative;
+        transition: 150ms ease-in;
+
+        &::after,
+        &::before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: inherit;
+          transition: 450ms ease-in;
+          border-radius: 3px;
+        }
+
+        &::after {
+          top: -7px;
+        }
+
+        &::before {
+          bottom: -7px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

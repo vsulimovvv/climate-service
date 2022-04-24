@@ -1,0 +1,109 @@
+<section class="questions">
+  <div class="container">
+    <h2 class="questions__title">
+      Ответьте, пожалуйста, <span>на несколько вопросов</span>
+    </h2>
+
+    <div class="questions__wrapper">
+      <form class="questions__form form">
+        <div class="form__group form__group--big">
+          <label class="form__label" for="location">
+            Где территориально находитесь?
+          </label>
+          <input class="form__input" type="text" id="location" />
+        </div>
+        <div class="form__group form__group--big">
+          <label class="form__label" for="specialization">
+            Ваша специализация? Что умеете ? Какая приоритетная для Вас работа /
+            услуга ?
+          </label>
+          <textarea
+            class="form__input form__input--textarea"
+            id="specialization"
+            placeholder="Если делаете ремонт , расскажите , что конкретно."
+          ></textarea>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="age">Ваш возраст</label>
+          <input class="form__input" type="text" id="age" />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="piecework"
+            >Работали по сдельной оплате?</label
+          >
+
+          <select class="form__input form__input--select select" id="piecework">
+            <option value="">Да / Нет</option>
+            <option value="yes">Да</option>
+            <option value="no">Нет</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="check">Какой средний чек?</label>
+          <input
+            class="form__input"
+            type="text"
+            placeholder="В среднем берете с клиента , общая сумма"
+            id="check"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="schedule"
+            >Какой график рассматриваете?</label
+          >
+          <input
+            class="form__input"
+            type="text"
+            id="schedule"
+            placeholder="Сколько можете брать заявок в день ?"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="tools">
+            Инструмент / Автомобиль имеется?
+          </label>
+
+          <select class="form__input form__input--select select" id="tools">
+            <option value="">Да / Нет</option>
+            <option value="yes">Да</option>
+            <option value="no">Нет</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="Area"
+            >Район по которому удобно работать?</label
+          >
+          <input class="form__input" type="text" id="area" />
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="travel"
+            >Готовы выезжать в другие районы?</label
+          >
+
+          <select class="form__input form__input--select select" id="travel">
+            <option value="">Да / Нет</option>
+            <option value="yes">Да</option>
+            <option value="no">Нет</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="alone"
+            >Вы работаете один или с напарником?</label
+          >
+          <input class="form__input" type="text" id="alone" />
+        </div>
+
+        <div class="form__group form__group--big">
+          <label class="custom-file-upload" for="file-upload">
+            Перенесите файл в это окно или выбирете на Вашем устройстве
+          </label>
+          <input id="file-upload" type="file" />
+        </div>
+
+        <div class="form__bottom">
+          <button class="form__btn btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
