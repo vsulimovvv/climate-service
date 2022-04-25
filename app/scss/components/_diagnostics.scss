@@ -1,0 +1,91 @@
+.diagnostics {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 90, 50, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+
+  &__title {
+    @include fz45();
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    align-items: center;
+    gap: 80px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    @include fz18();
+  }
+
+  &__box {
+    background-color: var(--color-white);
+    border: 4px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 50px;
+    @include adaptive-value('padding-left', 50, 15, 1);
+    @include adaptive-value('padding-right', 50, 15, 1);
+    @include adaptive-value('padding-bottom', 50, 30, 1);
+    @include adaptive-value('padding-top', 50, 30, 1);
+  }
+
+  &__heading {
+    @include fz25();
+    text-transform: uppercase;
+    @include adaptive-value('margin-bottom', 40, 25, 1);
+    @include breakpointsMaxW($bp-768) {
+      margin-left: 40px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 20px;
+    counter-reset: number;
+  }
+
+  &__item {
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: counter(number);
+      counter-increment: number;
+
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 400;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 26px;
+      height: 26px;
+      left: 0;
+      top: 0;
+
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px 0px #ffe02f;
+      color: #2e2e2e;
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__box {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

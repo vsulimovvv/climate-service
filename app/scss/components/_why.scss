@@ -1,0 +1,30 @@
+.why {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 50, 30, 1);
+  @include adaptive-value('padding-bottom', 100, 50, 1);
+
+  &__title {
+    text-align: center;
+    @include fz45();
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+
+    span {
+      display: block;
+    }
+    @include breakpointsMaxW($bp-991) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    @include fz18();
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include breakpointsMaxW($bp-991) {
+      text-align: left;
+      max-width: 100%;
+    }
+  }
+}

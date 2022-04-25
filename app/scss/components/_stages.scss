@@ -1,0 +1,109 @@
+.stages {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 90px;
+    @include breakpointsMaxW($bp-container) {
+      gap: 50px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    @include fz45();
+    line-height: 1.2;
+  }
+
+  &__list {
+    display: grid;
+    @include adaptive-value('gap', 60, 40, 1);
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      @include elDef();
+      background-color: #f9f6e2;
+      border-radius: 4px;
+      width: 8px;
+      height: 90%;
+      top: 0;
+      left: 42px;
+      z-index: -1;
+      
+      @include breakpointsMaxW($bp-576) {
+        left: 26px;
+        height: 82%;
+      }
+      @include breakpointsMaxW($bp-360) {
+        left: 26px;
+        height: 80%;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 19px;
+    @include adaptive-value('font-size', 19, 17, 1);
+    line-height: 1.5;
+    font-weight: 700;
+    color: #2e2e2e;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+    padding-left: 140px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #2e2e2e;
+    @include adaptive-value('font-size', 17, 15, 1);
+    position: relative;
+
+    @include breakpointsMaxW($bp-768) {
+      gap: 15px;
+    }
+    @include breakpointsMaxW($bp-576) {
+      padding-left: 80px;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 90px;
+      height: 90px;
+      background-color: var(--color-accent);
+      border-radius: 50%;
+
+      img {
+        object-fit: contain;
+      }
+
+      @include breakpointsMaxW($bp-576) {
+        width: 56px;
+        height: 56px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

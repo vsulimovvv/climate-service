@@ -1,0 +1,63 @@
+.danger {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 100, 50, 1);
+  @include adaptive-value('padding-bottom', 50, 20, 1);
+  position: relative;
+
+  &__title {
+    @include fz45();
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__preview {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 680px;
+    height: 530px;
+    @include background(contain);
+    right: max(15px, calc((100% - 1500px) / 2));
+    z-index: -1;
+
+    @include breakpointsMaxW(1440px) {
+      right: max(15px, calc((100% - 1500px) / 2));
+      width: calc(400px + (680 - 400) * ((100vw - 991px) / (1440 - 991)));
+      height: calc(350px + (530 - 350) * ((100vw - 991px) / (1440 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__preview-small {
+    display: none;
+
+    @include breakpointsMaxW($bp-991) {
+      width: 480px;
+      height: 330px;
+      width: calc(280px + (480 - 280) * ((100vw - 375px) / (991 - 375)));
+      height: calc(250px + (330 - 230) * ((100vw - 375px) / (991 - 375)));
+      display: block;
+      @include background(contain);
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    min-height: auto;
+  }
+
+  &__offer {
+    width: 55%;
+    @include breakpointsMaxW($bp-991) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    @include fz18();
+  }
+}

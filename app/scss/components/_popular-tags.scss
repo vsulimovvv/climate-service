@@ -8,9 +8,11 @@
     grid-template-columns: 200px 1fr;
     align-items: center;
     @include adaptive-value('gap', 40, 20, 1);
-position: relative;
+    position: relative;
+
     @include breakpointsMaxW($bp-991) {
       grid-template-columns: 1fr;
+      gap: 40px;
     }
   }
 
@@ -72,8 +74,12 @@ position: relative;
 
     @include breakpointsMaxW($bp-991) {
       position: absolute;
-      top: 0;
+      top: -10px;
       right: 0;
+    }
+    
+    @include breakpointsMaxW($bp-768) {
+      width: 94px;
     }
   }
 }

@@ -1,0 +1,26 @@
+.consist {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 75, 40, 1);
+  @include adaptive-value('padding-bottom', 75, 40, 1);
+
+  &__title {
+    @include fz45();
+    @include adaptive-value('margin-bottom', 35, 20, 1);
+
+    span {
+      display: block;
+     
+    }
+  }
+
+  &__text {
+    @include fz19();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptive-value('gap', 35, 15, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

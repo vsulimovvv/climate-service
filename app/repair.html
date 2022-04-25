@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Клим Сервис</title>
+  </head>
+
+  <body>
+    <div class="popup popup--service">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заявка на услугу “Испытательный комплекс”</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="service-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="service-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--product">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказ насоса ДГН СЕРИЯ</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="product-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="product-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="product-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="product-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--consultation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать консультацию</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="consultation-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="consultation-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="consultation-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="consultation-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Монтаж вентиляции</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Услуги</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Для юр.диц</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О нас</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">База знаний</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Услуги </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Для юр. лиц </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> О нас </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> База знаний </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Контакты </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__tools">
+        <a class="header__phone" href="tel:+74951282713">8 (495) 128-27-13</a>
+        <button class="header__btn btn" type="button">Вызвать мастера</button>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="benefits">
+  <div class="container">
+    <h2 class="visually-hidden">Преимущества</h2>
+
+    <ul class="benefits__list">
+      <li class="benefits__item benefits__item--time">
+        <div class="benefits__text">
+          <p>
+            Выезд специалиста в течении 30 минут с момента заказа. В ходе
+            обследования предоставляем бесплатные консультации, а также
+            рекомендации по наиболее рациональному и выгодному для заказчика
+            решению задач
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item benefits__item--tools">
+        <div class="benefits__text">
+          <p>
+            Наши специалисты оснащены собственным, самым современным,
+            высокотехнологичным оборудованием, полным комплектом
+            специализированного инструмента и транспорта
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item benefits__item--docs">
+        <div class="benefits__text">
+          <p>
+            Все технические отчеты оформляются в соответствии с действующими
+            техническими и законодательными нормативами сертифицированными
+            специалистами
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item benefits__item--guarantee">
+        <div class="benefits__text">
+          <p>
+            Мы предоставляем высочайшую степень гарантии на все виды работ.
+            Гарантия на выполненные работы до 12 месяцев.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="price-list -">
+  <div class="container">
+    <h2 class="price-list__title">
+      Стоимость работ по ремонту и
+      <span> обслуживнию вентиляции </span>
+    </h2>
+
+    <div class="price-list__wrapper">
+      <div class="price-list__box">
+        <div class="price-list__top">
+          <div class="price-list__left">Виды работ</div>
+          <div class="price-list__right">Стоимость</div>
+        </div>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Проведение санитарно-эпидемиологического обследования
+            </div>
+            <div class="price-list__right">от 3500 руб</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Определение состояния вентсистем видеоинспекционным оборудованием
+            </div>
+            <div class="price-list__right">от 80 руб/п.м</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Очистка вентиляционных систем от пылевых отложений с последующей
+              дезинфекцией
+            </div>
+            <div class="price-list__right">от 150 руб/м2</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Дезинфекция систем вентиляции</div>
+            <div class="price-list__right">от 50 руб/м2</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Очистка вентиляционных систем от жировых отложений с последующей
+              дезинфекцией
+            </div>
+            <div class="price-list__right">от 900 руб/м2</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Забор смывов из систем вентиляции и кондиционирования
+            </div>
+            <div class="price-list__right">от 350 руб/ед</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="result">
+  <div class="container">
+    <h2 class="result__title">Конечный результат для вашей компании</h2>
+
+    <div class="result__wrapper">
+      <div class="result__image">
+        <img
+          class="result__img"
+          src="images/content/result-bg.png"
+          alt="Результат"
+        />
+
+        <div class="result__items">
+          <div class="result__item result__item--first">
+            <div class="result__icon">
+              <img
+                src="images/content/result/cleaning-tools.svg"
+                alt="очитска"
+              />
+            </div>
+            <div class="result__text">
+              <p>Очистка и дезинфекция <span>систем вентиляции</span></p>
+            </div>
+          </div>
+          <div class="result__item result__item--second">
+            <div class="result__icon">
+              <img src="images/content/result/microbe.svg" alt="очитска" />
+            </div>
+            <div class="result__text">
+              <p>
+                Минимизация распространения
+                <span> вредных микроорганизмов </span>
+              </p>
+            </div>
+          </div>
+          <div class="result__item result__item--third">
+            <div class="result__icon">
+              <img src="images/content/result/fire.svg" alt="очитска" />
+            </div>
+            <div class="result__text">
+              <p>Снижение <span>пожароопасности</span></p>
+            </div>
+          </div>
+          <div class="result__item result__item--fourth">
+            <div class="result__icon">
+              <img src="images/content/result/fan.svg" alt="очитска" />
+            </div>
+            <div class="result__text">
+              <p>
+                Предотвращение выхода из строя
+                <span>вентиляционного оборудования</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="result__list result__items--mobile">
+          <div class="result__item result__item--first">
+            <div class="result__icon">
+              <img
+                src="images/content/result/cleaning-tools.svg"
+                alt="очитска"
+              />
+            </div>
+            <div class="result__text">
+              <p>Очистка и дезинфекция <span>систем вентиляции</span></p>
+            </div>
+          </div>
+
+          <div class="result__item result__item--second">
+            <div class="result__icon">
+              <img src="images/content/result/microbe.svg" alt="очитска" />
+            </div>
+            <div class="result__text">
+              <p>
+                Минимизация распространения
+                <span> вредных микроорганизмов </span>
+              </p>
+            </div>
+          </div>
+          <div class="result__item result__item--third">
+            <div class="result__icon">
+              <img src="images/content/result/fire.svg" alt="очитска" />
+            </div>
+            <div class="result__text">
+              <p>Снижение <span>пожароопасности</span></p>
+            </div>
+          </div>
+          <div class="result__item result__item--fourth">
+            <div class="result__icon">
+              <img src="images/content/result/fan.svg" alt="очитска" />
+            </div>
+            <div class="result__text">
+              <p>
+                Предотвращение выхода из строя
+                <span>вентиляционного оборудования</span>
+              </p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="why">
+  <div class="container">
+    <h2 class="why__title">
+      Зачем нужно сервисное <span> обслуживание вентиляции?</span>
+    </h2>
+
+    <div class="why__text">
+      <p>
+        Обслуживание вентиляции— одно из необходимых условий для комфортного
+        микроклимата в помещении. Проверки и диагностика оборудования не должны
+        быть разовым явлением, ведь именно от контроля за состоянием системы
+        вентиляции зависит ее бесперебойная работа. Стоит отметить, что проверка
+        эффективности работы вентиляции предусмотрена нормативными требованиями
+        в РФ. Отсутствие документов об обслуживании и проверках работы
+        вентиляционной системы может повлечь за собой неприятные последствия для
+        владельца бизнеса. Как показывает практика, многие скрытые проблемы
+        выявляются только в ходе профессиональной диагностики системы вентиляции
+        и кондиционирования. Сервисное обслуживание в несколько раз снижает риск
+        внезапных поломок дорогого оборудования, а также помогает поддерживать
+        работу все системы циркуляции воздуха на высоком уровне.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="service">
+  <div class="container">
+    <div class="service__wrapper">
+      <div class="service__offer">
+        <h2 class="service__title">В обслуживание вентиляции входит</h2>
+
+        <ul class="service__list">
+          <li class="service__item">
+            Очистку вентиляции, прочистку вентиляции, промывку вентиляционных
+            систем и агрегатов.
+          </li>
+          <li class="service__item">
+            Дезинфекцию систем вентиляции и кондиционирования.
+          </li>
+          <li class="service__item">Видеоинспекцию воздуховодов.</li>
+          <li class="service__item">
+            Очистку систем вентиляции и воздуховодов после монтажа.
+          </li>
+          <li class="service__item">Установку и замену мягких вставок.</li>
+          <li class="service__item">
+            Обслуживание систем вентиляции, ремонт и установку технологических
+            люков.
+          </li>
+          <li class="service__item">
+            Замену фильтрующих элементов, в том числе специальных для VIP
+            помещений.
+          </li>
+        </ul>
+
+        <div class="service__bottom">
+          <button class="service__btn btn btn--call" type="button">
+            Вызвать мастера
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="service__preview"
+    style="background-image: url('images/content/service-bg.jpg')"
+  ></div>
+</section>
+
+        <section class="danger">
+  <div class="container">
+    <div class="danger__wrapper">
+      <div class="danger__offer">
+        <h2 class="danger__title">
+          Чем грозит отсутствие сервисного обслуживании?
+        </h2>
+
+        <div class="danger__text">
+          <p>
+            Техническое обслуживание вытяжной вентиляции имеет огромное
+            значение. Независимо от того, установлена ли вентиляционная система
+            в офисе, на производстве или в жилом доме, без необходимых сервисных
+            мероприятий вся вентиляция подвергается большому риску, а главное –
+            подвергает опасности здоровье людей в здании. Даже в обычной жилой
+            квартире в воздухе накапливается угарный газ при приготовлении пищи,
+            не говоря уже о производственных зданиях, где концентрация вредных
+            для здоровья веществ гораздо выше. Очень важна вентиляция в санузлах
+            и ванных комнатах – иначе там начинают скапливаться неприятные
+            запахи и сырость, образуется плесень.
+          </p>
+        </div>
+      </div>
+      
+      <div
+        class="danger__preview-small"
+        style="background-image: url('images/content/danger-bg.png')"
+      ></div>
+    </div>
+  </div>
+  <div
+    class="danger__preview"
+    style="background-image: url('images/content/danger-bg.png')"
+  ></div>
+</section>
+
+        <section class="needs">
+  <div class="container">
+    <div class="needs__wrapper">
+      <div class="needs__offer">
+        <h2 class="needs__title">
+          Необходимость обслуживания вентиляционных систем
+        </h2>
+
+        <div class="needs__text">
+          <p>
+            Инженерные сети обеспечивают комфорт и безопасность нашей
+            повседневной жизни. Системы электроснабжения, отопления, вентиляции
+            и кондиционирования делают повседневную жизнь людей удобной и
+            приятной. Каждая из систем выполняет свою конкретную задачу.
+            Назначение систем вентиляции заключается в обеспечении воздухообмена
+            в жилых и офисных зданиях, на производственных объектах с целью
+            поддержания микроклимата, соответствующего санитарным нормам.
+          </p>
+          <p>
+            Зачастую вентиляционные системы в промышленных сооружениях, а также
+            зданиях с большим потоком посетителей, работают в экстремальных
+            условиях или интенсивном режиме. Такой режим работы системы снижает
+            ее эффективность и срок безаварийной службы.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="needs__preview-small"
+        style="background-image: url('images/content/needs-bg.png')"
+      ></div>
+    </div>
+  </div>
+  <div
+    class="needs__preview"
+    style="background-image: url('images/content/needs-bg.png')"
+  ></div>
+</section>
+
+        <section class="privilege">
+  <div class="container">
+    <div class="privilege__top">
+      <h2 class="privilege__title">
+        Какие преимущества дает регулярное техобслуживание систем вентиляции?
+      </h2>
+      <div class="privilege__text">
+        <p>
+          Заказывая в нашей компании услуги, включающие профессиональное
+          обслуживание кондиционирующих систем и вентиляции, вы получаете целый
+          ряд преимуществ. Среди них:
+        </p>
+      </div>
+    </div>
+
+    <ul class="privilege__list">
+      <li class="privilege__item">
+        <div class="privilege__icon">
+          <img
+            width="36"
+            height="36"
+            src="images/content/privileges/1.png"
+            alt="Снижение расходов"
+          />
+        </div>
+        <h3 class="privilege__heading">Снижение расходов</h3>
+        <div class="privilege__descr">
+          <p>
+            Плановые проверки состояния вентиляционного оборудования в среднем
+            продлевают их срок эксплуатации в полтора-два раза. Согласитесь, что
+            стоимость обслуживания ниже, чем цены на покупку и установку нового
+            оборудования.
+          </p>
+        </div>
+      </li>
+      <li class="privilege__item">
+        <div class="privilege__icon">
+          <img
+            width="36"
+            height="36"
+            src="images/content/privileges/2.png"
+            alt="Снижение расходов"
+          />
+        </div>
+        <h3 class="privilege__heading">Рост производительности системы</h3>
+        <div class="privilege__descr">
+          <p>
+            Если не проводить вовремя техобслуживание вентиляционных установок,
+            то это может привести к снижению его мощности и ухудшению качества
+            работы.
+          </p>
+        </div>
+      </li>
+      <li class="privilege__item">
+        <div class="privilege__icon">
+          <img
+            width="36"
+            height="36"
+            src="images/content/privileges/3.png"
+            alt="Снижение расходов"
+          />
+        </div>
+        <h3 class="privilege__heading">Соблюдение противопожарных норм</h3>
+        <div class="privilege__descr">
+          <p>
+            Пыль в системах вентиляции – частая причина возгораний и
+            быстрого распространения огня. Недаром проверяющие из МЧС
+            обращают особое внимание на то, как соблюдается график
+            очистки воздуховодов, исправны ли огнезадерживающие клапаны.
+          </p>
+        </div>
+      </li>
+      <li class="privilege__item">
+        <div class="privilege__icon">
+          <img
+            width="36"
+            height="36"
+            src="images/content/privileges/4.png"
+            alt="Снижение расходов"
+          />
+        </div>
+        <h3 class="privilege__heading">Свежий и чистый воздух в помещении</h3>
+        <div class="privilege__descr">
+          <p>
+            Своевременная замена воздушных фильтров поможет
+            предотвратить развитие в вентиляции болезнетворных бактерий
+            и их распространение в помещении. В вашем помещении будет
+            комфортная температура и свежий воздух в любое время года.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="diagnostics">
+  <div class="container">
+    <div class="diagnostics__top">
+      <h2 class="diagnostics__title">
+        Диагностика и профилактические мероприятия
+      </h2>
+      <div class="diagnostics__text">
+        <p>
+          Плановое обслуживание вентиляции – это выполнение двух видов работ:
+          полная диагностика вентиляционной системы и мероприятия по сервису, и
+          профилактике.
+        </p>
+      </div>
+    </div>
+
+    <div class="diagnostics__box">
+      <h3 class="diagnostics__heading">Диагностика включает в себя:</h3>
+      <ol class="diagnostics__list">
+        <li class="diagnostics__item">
+          Определение типа и вида системы, ее показатели на износ и общее
+          техническое состояние всех элементов системы вентиляции.
+        </li>
+        <li class="diagnostics__item">
+          Определение чистоты воздушных фильтров.
+        </li>
+        <li class="diagnostics__item">
+          Неоднократное измерение разницы между давлением и температурой на
+          входе в вентсистему и на выходе, а также сравнение показателей.
+        </li>
+        <li class="diagnostics__item">
+          Диагностика вентиляторов, их механических свойств.
+        </li>
+        <li class="diagnostics__item">
+          Контроль состояния вентиляционных решеток снаружи и внутри. Осмотр
+          воздухозаборных и воздухораспределительных решеток.
+        </li>
+        <li class="diagnostics__item">
+          Тестирование электрических сетей и автоматических приборов системы.
+        </li>
+        <li class="diagnostics__item">
+          Контроль за срабатыванием аварийного отключения вентсистемы.
+          Диагностика проводится в соответствии с ГОСТами и в ходе неё
+          определяются все сервисно-профилактические меры для устранения
+          неисправностей в системе вентиляции.
+        </li>
+      </ol>
+    </div>
+
+    <div class="diagnostics__box">
+      <h3 class="diagnostics__heading">Мероприятия по сервису и профилактике включают в себя:</h3>
+      <ol class="diagnostics__list">
+        <li class="diagnostics__item">
+          Проведение очистки всех воздуховодов, фильтров, приборов вытяжки и нагнетания воздуха.
+
+        </li>
+        <li class="diagnostics__item">
+          Измерение напряжения электросети, снабжающей током все приборы системы вентиляции.
+        </li>
+        <li class="diagnostics__item">
+          Анализирование изменения температуры воздушного потока и его влажности в движении от вхождения в помещение до выхода
+          на улицу.
+          
+        </li>
+        <li class="diagnostics__item">
+          Анализ и установление причины изменения температуры воздушного потока в ту или иную сторону (перегрев или сильное
+          охлаждение).
+        </li>
+        <li class="diagnostics__item">
+          Внесение всех неисправностей в карточку сервисного обслуживания.
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+        <section class="cost">
+  <div class="container">
+    <div class="cost__wrapper">
+      <div class="cost__offer">
+        <h2 class="cost__title">Стоимость ремонта и обслуживания вентиляции</h2>
+
+        <div class="cost__text">
+          <p>
+            Стоимость ремонта вентиляции многоквартирного дома или предприятия
+            определяется сметой. Перечень услуг, предлагаемых фирмами по ремонту
+            вентиляции в квартирах и офисах, разнится. Поэтому стоимость
+            сервисного пакета, включающего почти одинаковые услуги, может быть
+            разной. Цена ремонта вентиляции определяется видом, мощностью и
+            разветвленностью сети, количеством и типом оборудования. Планируя
+            ремонт вентиляции в квартире, предварительно изучите предложения
+            нескольких компаний, уделив особое внимание уровню квалификации
+            специалистов, оснащенности оборудованием и инструментами.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="cost__preview"
+    style="background-image: url('images/content/cost-bg.png')"
+  ></div>
+</section>
+
+        <section class="guarantee">
+  <div class="container">
+    <h2 class="guarantee__title">
+      Предоставляем гарантии на ремонт и обслуживание вентиляции
+    </h2>
+
+    <div class="guarantee__inner">
+      <div class="guarantee__text">
+        <p>
+          Вентиляция – это одно из самых важных систем, которые находятся в
+          наших домах. Именно вентиляция отвечает за комфорт, свежесть и уют в
+          доме. И наверняка каждый из нас надеется на то, что это замечательное
+          климатическая система прослужит долгие годы.
+        </p>
+
+        <p>
+          Чтобы вы были на 100% уверены в долговечности своей вентиляции,
+          компания «Клим Сервис» предоставляет выгодную гарантию.
+        </p>
+      </div>
+      <ul class="guarantee__list">
+        <li class="guarantee__item guarantee__item--work">
+          <div class="guarantee__icon">
+            <img
+              width="49"
+              height="49"
+              src="images/icons/warranty.svg"
+              alt=""
+            />
+          </div>
+          <p class="guarantee__descr">
+            Гарантия на <span>проведенные работы</span>
+          </p>
+        </li>
+        <li class="guarantee__item guarantee__item--spare-parts">
+          <div class="guarantee__icon">
+            <img
+              width="49"
+              height="49"
+              src="images/icons/warranty-1.svg"
+              alt=""
+            />
+          </div>
+          <p class="guarantee__descr">
+            Гарантия на <span>используемые запчасти</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="call">
+  <div class="container">
+    <div
+      class="call__wrapper"
+      style="background-image: url('images/content/call-bg.jpg')"
+    >
+      <div class="call__offer">
+        <h2 class="call__title">
+          Вызовите мастера для профилактики вентиляции
+        </h2>
+        <div class="call__text">
+          <p>
+            Мы свяжемся с Вами для подтверждения
+            <span>
+              заявки и уточнения времени <span class="call__arrow"></span
+            ></span>
+          </p>
+        </div>
+      </div>
+      <div class="call__right">
+        <button class="call__btn btn" type="button">
+          Оставить заявку на обслуживание
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts contacts--video">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__offer">
+        <h2 class="contacts__title">Наши контакты</h2>
+
+        <ul class="contacts__links">
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--phone"
+              href="tel:+74951217770"
+            >
+              +7 (495) 121 77 70
+            </a>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__link contacts__link--address">
+              Москва, Варшавское шоссе, 28А
+            </address>
+          </li>
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--mail"
+              href="mailto:info@clim-service.ru"
+            >
+              info@clim-service.ru
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--instagram" href="#"
+              >Наш инстаграм</a
+            >
+          </li>
+        </ul>
+
+        <div class="contacts__download">
+          <a
+            class="contacts__download-link contacts__download-link--download"
+            href="#"
+            >Скачай прайс-лист</a
+          >
+          <a class="contacts__download-link" href="#">Для юридических лиц</a>
+        </div>
+
+        <button class="contacts__btn btn" type="button">Вызвать мастера</button>
+      </div>
+      <div class="contacts__map map">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7BujL88OLnw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__text">
+      <p>
+        © 2019. <strong>Клим Сервис.</strong> Все права защищены.
+        <a href="#">Политика конциденциальности.</a> <br />
+        <a href="#">Карта сайта</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=7BujL88OLnw -->
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

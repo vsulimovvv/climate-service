@@ -1,0 +1,82 @@
+.privilege {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 75, 40, 1);
+  @include adaptive-value('padding-bottom', 130, 60, 1);
+  background-color: #dee5eb;
+  @include background(cover);
+  background-image: url('../images/content/privilege.jpg');
+
+  @include breakpointsMinW(1921px) {
+    background-size: contain;
+  }
+
+  &__title {
+    @include fz45();
+    max-width: 630px;
+    margin: 0 auto;
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__top {
+    text-align: center;
+    @include adaptive-value('margin-bottom', 140, 80, 1);
+  }
+
+  &__text {
+    @include fz18();
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    width: 86px;
+    height: 86px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include breakpointsMaxW($bp-768) {
+      width: 66px;
+      height: 66px;
+    }
+
+    img {
+      object-fit: contain;
+
+      @include breakpointsMaxW($bp-768) {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  &__heading {
+    @include fz18();
+    text-transform: uppercase;
+    font-weight: 700;
+    @include adaptive-value('margin-bottom', 20, 10, 1);
+  }
+
+  &__list {
+    display: grid;
+    @include adaptive-value('gap', 70, 40, 1);
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 117px;
+    max-width: 640px;
+    @include breakpointsMaxW($bp-768) {
+      padding-left: 90px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 540px;
+    }
+  }
+}

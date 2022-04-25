@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: var(--color-dark);
-  background-color: var(--color-bg);
+  background-color: var(--color-white);
   position: relative;
   overflow-x: hidden;
 
@@ -84,6 +84,19 @@ body {
   border: 2px solid var(--color-accent);
   position: relative;
   z-index: 1;
+
+  &--call {
+    font-size: 23px;
+    font-weight: 700;
+    color: #191919;
+    text-transform: none;
+    padding: 20px 50px;
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 19px;
+      padding: 15px 40px;
+    }
+  }
 
   &:hover {
     &:hover {

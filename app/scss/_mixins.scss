@@ -99,3 +99,35 @@ $maxWidthContainer: 1230;
 }
 
 //  margin-bottom: calc(28px + (36 - 28) * ((100vw - 375px) / (1230 - 375)));
+
+//     right: max(15px, calc((100% - 1400px) / 2));
+
+@mixin fz45 {
+  @include adaptive-value('font-size', 45, 26, 1);
+  color: #2e2e2e;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@mixin fz38 {
+  @include adaptive-value('font-size', 45, 23, 1);
+}
+@mixin fz19 {
+  @include adaptive-value('font-size', 19, 16, 1);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #575757;
+}
+@mixin fz18 {
+  @include adaptive-value('font-size', 18, 15, 1);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+@mixin fz25 {
+  @include adaptive-value('font-size', 25, 20, 1);
+  line-height: 1.5;
+  color: #2e2e2e;
+  font-weight: 700;
+}

@@ -1,0 +1,64 @@
+.cost {
+  font-family: $Circe;
+
+  position: relative;
+  @include breakpointsMaxW($bp-991) {
+    // padding-bottom: 200px;
+  }
+
+  &__title {
+    @include fz45();
+    @include adaptive-value('margin-bottom', 35, 20, 1);
+  }
+
+  &__wrapper {
+    border-bottom: 2px solid #eeeeee;
+    @include adaptive-value('padding-top', 75, 40, 1);
+    @include adaptive-value('padding-bottom', 95, 40, 1);
+    @include breakpointsMaxW($bp-991) {
+      // padding-bottom: 300px;
+    }
+  }
+
+  &__offer {
+    width: 65%;
+    @include breakpointsMaxW($bp-991) {
+      width: 100%;
+    }
+  }
+  &__text {
+    @include fz18();
+    max-width: 630px;
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+    }
+  }
+
+  &__preview {
+    position: absolute;
+    width: 555px;
+    height: 455px;
+    @include background(contain);
+    right: max(15px, calc((100% - 1400px) / 2));
+    @include adaptive-value('top', 75, 40, 1);
+
+    @include breakpointsMaxW(1440px) {
+      width: calc(300px + (555 - 300) * ((100vw - 991px) / (1440 - 991)));
+      height: calc(250px + (455 - 250) * ((100vw - 991px) / (1440 - 991)));
+    }
+    @include breakpointsMaxW($bp-container) {
+      top: initial;
+      bottom: 100px;
+      transform: translateY(0);
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      // width: 270px;
+      // height: 230px;
+      // bottom: 250px;
+      // left: 50%;
+      // transform: translateX(-50%);
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.call {
+  min-height: 310px;
+
+  color: var(--color-white);
+  font-family: $Circe;
+
+  &__wrapper {
+    border-radius: 20px;
+    min-height: 310px;
+    padding: 70px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @include background(cover);
+    @include adaptive-value('padding-top', 70, 40, 1);
+    @include adaptive-value('padding-bottom', 70, 40, 1);
+    padding-left: 35px;
+    padding-right: 35px;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    @include breakpointsMaxW($bp-768) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__offer {
+    max-width: 460px;
+    width: 100%;
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @include adaptive-value('font-size', 38, 25, 1);
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 19px;
+    position: relative;
+    @include adaptive-value('font-siz', 19, 17, 1);
+
+    span {
+      display: block;
+
+      @include breakpointsMaxW($bp-991) {
+        display: inline;
+      }
+    }
+  }
+
+  &__btn {
+    font-family: $Circe;
+    font-size: 21px;
+    font-weight: 700;
+    color: #191919;
+    padding: 25px;
+    border-radius: 35px;
+    @include breakpointsMaxW($bp-container) {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+
+  &__right {
+    @include breakpointsMaxW($bp-991) {
+      margin: 0 auto;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: block;
+    @include backgroundImage(url('../images/content/arrow-long.png'), contain);
+    width: 203px;
+    height: 13px;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+
+    @include breakpointsMaxW($bp-991) {
+      display: none !important;
+    }
+  }
+}

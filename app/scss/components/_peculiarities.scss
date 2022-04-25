@@ -1,0 +1,59 @@
+.peculiarities {
+  font-family: $Circe;
+  background-color: #f8f8f8;
+  @include fz19();
+  color: #575757;
+  background-image: url('../images/content/peculiarities-bg.jpg');
+  @include background(cover);
+
+  @include breakpointsMaxW($bp-768) {
+    background-image: none;
+  }
+  @include breakpointsMinW(1921px) {
+    background-size: contain;
+  }
+
+  &__wrapper {
+    @include adaptive-value('padding-top', 75, 40, 1);
+    @include adaptive-value('padding-bottom', 75, 40, 1);
+    width: 60%;
+
+    @include breakpointsMaxW($bp-768) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include fz45();
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include adaptive-value('margin-bottom', 45, 25, 1);
+  }
+
+  &__list {
+    display: grid;
+    gap: 10px;
+    padding-left: 28px;
+    @include breakpointsMaxW($bp-768) {
+      padding-left: 10px;
+    }
+  }
+
+  &__item {
+    padding-left: 25px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 11px;
+      height: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: #e33232;
+      border-radius: 50%;
+    }
+  }
+}

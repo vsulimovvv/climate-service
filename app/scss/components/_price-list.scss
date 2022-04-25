@@ -1,0 +1,73 @@
+.price-list {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 50, 30, 1);
+  @include adaptive-value('padding-bottom', 50, 30, 1);
+
+  &__title {
+    @include fz45();
+    text-align: center;
+    line-height: 1.2;
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+
+    span {
+      display: block;
+    }
+  }
+
+  &__box {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #303030;
+    border-radius: 10px 10px 0px 0px;
+    color: var(--color-white);
+    padding: 20px 30px;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+    @include adaptive-value('font-size', 20, 15, 1);
+    @include adaptive-value('padding-top', 20, 12, 1);
+    @include adaptive-value('padding-bottom', 20, 12, 1);
+    @include adaptive-value('padding-left', 30, 12, 1);
+    @include adaptive-value('padding-right', 30, 12, 1);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 30px;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 400;
+    color: #303030;
+
+    @include adaptive-value('font-size', 17, 13, 1);
+    @include adaptive-value('padding-top', 20, 15, 1);
+    @include adaptive-value('padding-bottom', 20, 15, 1);
+    @include adaptive-value('padding-left', 30, 12, 1);
+    @include adaptive-value('padding-right', 30, 12, 1);
+
+    &:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+  }
+
+  &__left {
+    @include breakpointsMaxW($bp-576) {
+      max-width: 300px;
+    }
+  }
+
+  &__right {
+    flex-shrink: 0;
+  }
+}

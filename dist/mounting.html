@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Клим Сервис</title>
+  </head>
+
+  <body>
+    <div class="popup popup--service">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заявка на услугу “Испытательный комплекс”</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="service-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="service-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--product">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказ насоса ДГН СЕРИЯ</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="product-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="product-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="product-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="product-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--consultation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать консультацию</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="consultation-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="consultation-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="consultation-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="consultation-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Монтаж вентиляции</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Услуги</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Для юр.диц</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О нас</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">База знаний</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Услуги </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Для юр. лиц </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> О нас </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> База знаний </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Контакты </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__tools">
+        <a class="header__phone" href="tel:+74951282713">8 (495) 128-27-13</a>
+        <button class="header__btn btn" type="button">Вызвать мастера</button>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="advantages">
+  <div class="container">
+    <ul class="advantages__list">
+      <li class="advantages__item advantages__item--mounting">
+        <div class="advantages__icon"></div>
+        <div class="advantages__text">
+          <p>
+            Специалисты профессионально произведут монтаж вентиляции в Москве и
+            Московской области на объекте любого уровня сложности
+          </p>
+        </div>
+      </li>
+      <li class="advantages__item advantages__item--project">
+        <div class="advantages__icon"></div>
+        <div class="advantages__text">
+          <p>
+            Проводим все строго по проекту,
+            в соответствии нормативно-
+            правовой документацией и
+            требованиями СНИП, СП.
+          </p>
+        </div>
+      </li>
+      <li class="advantages__item advantages__item--integrated">
+        <div class="advantages__icon"></div>
+        <div class="advantages__text">
+          <p>
+            Обеспечиваем интегрированную
+            работу системы вентиляции
+            с другими инженерными
+            механизмами.
+          </p>
+        </div>
+      </li>
+      <li class="advantages__item advantages__item--experience">
+        <div class="advantages__icon"></div>
+        <div class="advantages__text">
+          <p>
+            В штате профессиональные
+            специалисты с опытом
+            проектирования
+            более 10 лет.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="mounting">
+  <div class="container">
+    <h2 class="mounting__title">Монтаж систем вентиляции</h2>
+
+    <ul class="mounting__list">
+      <li class="mounting__itme">
+        <article class="ventilation-card">
+          <div class="ventilation-card__top">
+            <div class="ventilation-card__img">
+              <img
+                src="images/content/ventilations/1.png"
+                width="233"
+                height="115"
+                alt="Приточная
+              вентиляция"
+              />
+            </div>
+            <h3 class="ventilation-card__title">
+              Приточная <span> вентиляция </span>
+            </h3>
+          </div>
+          <div class="ventilation-card__info">
+            <div class="ventilation-card__text">
+              <p>
+                Приточный механизм вентиляции нужен тогда, когда ваша задача –
+                доставка свежего уличного воздуха в помещение. Если вам
+                захочется большего, то вы сможете добавить такие опции обработки
+                воздуха, как фильтрация, нагрев, охлаждение, увлажнение и
+                осушение.
+              </p>
+            </div>
+          </div>
+
+          <button class="ventilation-card__btn btn" type="button">
+            Вызвать мастера
+          </button>
+        </article>
+      </li>
+      <li class="mounting__itme">
+        <article class="ventilation-card">
+          <div class="ventilation-card__top">
+            <div class="ventilation-card__img">
+              <img
+                src="images/content/ventilations/2.png"
+                width="193"
+                height="145"
+                alt="Приточная
+              вентиляция"
+              />
+            </div>
+            <h3 class="ventilation-card__title">
+              Вытяжная <span> вентиляция </span>
+            </h3>
+          </div>
+          <div class="ventilation-card__info">
+            <div class="ventilation-card__text">
+              <p>
+                Вытяжной механизм вентиляции работает по принципу вытяжки на
+                кухне: она всасывает загрязненный и отработанный воздух, а также
+                воздух с высоким содержанием газов и пыли. Только на кухне она
+                локальная, а вытяжная вентиляция – установка, рассчитанная на
+                очистку воздуха целого помещения, например, крупного
+                предприятия.
+              </p>
+            </div>
+          </div>
+          <button class="ventilation-card__btn btn" type="button">
+            Вызвать мастера
+          </button>
+        </article>
+      </li>
+      <li class="mounting__itme">
+        <article class="ventilation-card">
+          <div class="ventilation-card__top">
+            <div class="ventilation-card__img">
+              <img
+                src="images/content/ventilations/3.png"
+                width="220"
+                height="135"
+                alt="Приточно-вытяжная"
+              />
+            </div>
+            <h3 class="ventilation-card__title">
+              Приточно-вытяжная <span> вентиляция </span>
+            </h3>
+          </div>
+          <div class="ventilation-card__info">
+            <div class="ventilation-card__text">
+              <p>
+                Вытяжной механизм вентиляции работает по принципу вытяжки на
+                кухне: она всасывает загрязненный и отработанный воздух, а также
+                воздух с высоким содержанием газов и пыли. Только на кухне она
+                локальная, а вытяжная вентиляция – установка, рассчитанная на
+                очистку воздуха целого помещения, например, крупного
+                предприятия.
+              </p>
+            </div>
+          </div>
+          <button class="ventilation-card__btn btn" type="button">
+            Вызвать мастера
+          </button>
+        </article>
+      </li>
+      <li class="mounting__itme">
+        <article class="ventilation-card">
+          <div class="ventilation-card__top">
+            <div class="ventilation-card__img">
+              <img
+                src="images/content/ventilations/4.png"
+                width="235"
+                height="105"
+                alt="Приточно-вытяжная"
+              />
+            </div>
+            <h3 class="ventilation-card__title">
+              Вентиляция
+
+              <span> с рекуперацией </span>
+            </h3>
+          </div>
+          <div class="ventilation-card__info">
+            <div class="ventilation-card__text">
+              <p>
+                Приточно-вытяжная система с рекуперацией предназначена для
+                экономии электроэнергии, нагревающей свежий воздух в зимний
+                сезон. Рекуператор забирает тепло из выходящего потока воздуха и
+                передает его новому, поступающему с улицы.
+              </p>
+            </div>
+          </div>
+          <button class="ventilation-card__btn btn" type="button">
+            Вызвать мастера
+          </button>
+        </article>
+      </li>
+      <li class="mounting__itme">
+        <article class="ventilation-card">
+          <div class="ventilation-card__top">
+            <div class="ventilation-card__img">
+              <img
+                src="images/content/ventilations/5.png"
+                width="160"
+                height="155"
+                alt="Приточно-вытяжная"
+              />
+            </div>
+            <h3 class="ventilation-card__title">
+              Противодымная
+              <span> вентиляция </span>
+            </h3>
+          </div>
+          <div class="ventilation-card__info">
+            <div class="ventilation-card__text">
+              <p>
+                Противодымная вентиляция создана для снижения концентрации
+                продуктов горения и обеспечения незадымляемости помещений,
+                коридоров и лестниц. За счет слаженной работы всех элементов
+                обеспечивается параллельная очистка воздуха, улучшается
+                видимость в эвакуационных коридорах и холлах здания, лифтах.
+              </p>
+            </div>
+          </div>
+          <button class="ventilation-card__btn btn" type="button">
+            Вызвать мастера
+          </button>
+        </article>
+      </li>
+      <li class="mounting__itme">
+        <article class="ventilation-card">
+          <div class="ventilation-card__top">
+            <div class="ventilation-card__img">
+              <img
+                src="images/content/ventilations/6.png"
+                width="228"
+                height="145"
+                alt="Приточно-вытяжная"
+              />
+            </div>
+            <h3 class="ventilation-card__title">
+              Промышленная
+
+              <span> вентиляция </span>
+            </h3>
+          </div>
+          <div class="ventilation-card__info">
+            <div class="ventilation-card__text">
+              <p>
+                Промышленный механизм вентиляции используется в помещениях
+                промышленного назначения, где нужна мощность: производствах,
+                цехах, складах и т.д.. Работает в режиме притока и вытяжки
+                воздуха, разница в том, что промышленная вентиляция еще и
+                поддерживает показатели температуры и уровня влажности в
+                зависимости от требований.
+              </p>
+            </div>
+          </div>
+          <button class="ventilation-card__btn btn" type="button">
+            Вызвать мастера
+          </button>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="price-list">
+  <div class="container">
+    <h2 class="price-list__title">
+      Прайс - лист на работы <span> по монтажу вентиляции </span>
+    </h2>
+
+    <div class="price-list__wrapper">
+      <div class="price-list__box">
+        <div class="price-list__top">
+          <div class="price-list__left">Монтаж приточных установок</div>
+          <div class="price-list__right">Стоимость</div>
+        </div>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточной установки мощностью до 300 м3/час
+            </div>
+            <div class="price-list__right">от 11000 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточной установки мощностью до 700 м3/час
+            </div>
+            <div class="price-list__right">от 13000 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточной установки мощностью до 1500 м3/час
+            </div>
+            <div class="price-list__right">от 22000 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточной установки мощностью до 2000 м3/час
+            </div>
+            <div class="price-list__right">от 28000 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточной установки мощностью до 3000 м3/час
+            </div>
+            <div class="price-list__right">от 33000 руб.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="price-list__box">
+        <div class="price-list__top">
+          <div class="price-list__left">
+            Монтаж приточно - вытяжных установок
+          </div>
+          <div class="price-list__right">Стоимость</div>
+        </div>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточно-вытяжной установки мощностью до 700 м3/час
+            </div>
+            <div class="price-list__right">от 18000 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточно-вытяжной установки мощностью до 1500 м3/час
+            </div>
+            <div class="price-list__right">от 32500 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточно-вытяжной установки мощностью до 2500 м3/час
+            </div>
+            <div class="price-list__right">от 39000 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж приточно-вытяжной установки мощностью свыше 2500 м3/час
+            </div>
+            <div class="price-list__right">от 49000 руб.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="price-list__box">
+        <div class="price-list__top">
+          <div class="price-list__left">
+            Монтаж приточно - вытяжных установок
+          </div>
+          <div class="price-list__right">Стоимость</div>
+        </div>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж вытяжной установки</div>
+            <div class="price-list__right">от 1500 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Сборка вытяжной установки</div>
+            <div class="price-list__right">от 1800 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">
+              Монтаж и подключение вытяжного вентилятора
+            </div>
+            <div class="price-list__right">от 1100 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Подключение вытяжной установки</div>
+            <div class="price-list__right">от 3000 руб.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="price-list__box">
+        <div class="price-list__top">
+          <div class="price-list__left">
+            Монтаж приточно - вытяжных установок
+          </div>
+          <div class="price-list__right">Стоимость</div>
+        </div>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж круглого воздуховода D = 100 мм (м.п.)</div>
+            <div class="price-list__right">от 140 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж круглого воздуховода D = 125 мм (м.п.)</div>
+            <div class="price-list__right">от 160 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж круглого воздуховода D = 160 мм (м.п.)</div>
+            <div class="price-list__right">от 240 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж круглого воздуховода D = 200 мм (м.п.)</div>
+            <div class="price-list__right">от 340 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж круглого воздуховода D = 250 мм (м.п.)</div>
+            <div class="price-list__right">от 440 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Монтаж круглого воздуховода D = 315 мм (м.п.)</div>
+            <div class="price-list__right">от 540 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Прокладка гибких воздуховодов (1 м.кв.)</div>
+            <div class="price-list__right">от 290 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Прокладка жестких прямоугольных воздуховодов (1 м.кв.)</div>
+            <div class="price-list__right">от 490 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Демонтаж прямоугольного воздуховода (м.п.)</div>
+            <div class="price-list__right">от 140 руб.</div>
+          </li>
+          <li class="price-list__item">
+            <div class="price-list__left">Демонтаж круглого воздуховода D = 250 мм (м.п.)</div>
+            <div class="price-list__right">от 190 руб.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="terms">
+  <div class="container">
+    <h2 class="terms__title">Сроки монтажа вентиляции</h2>
+
+    <div class="terms__wrapper">
+      <div class="terms__top">
+        <p>
+          Согласование схем и составление графика время работ занимает около 2
+          дней.
+        </p>
+
+        <p>
+          Подробнее об особенностях, влияющих на сроки, можно уточнить у
+          менеджеров.
+        </p>
+      </div>
+
+      <div class="terms__text">
+        <p>
+          Сроки выполнения монтажа вентиляции в Москве под ключ зависят от
+          сложности объекта, например, для ресторана, срок может занимать от 1
+          недели до 2 месяцев.
+        </p>
+
+        <p>
+          Пусконаладка и настройка автоматики, в среднем, занимают от 12 до 24
+          часов.
+        </p>
+
+        <p>
+          Установка вентиляционной системы – сложный, но важный процесс. При
+          строительстве коммерческого или государственного объекта, ее внедрение
+          необходимо: она гарантирует безопасность и здоровье людей, особенно в
+          местах их скопления, за счет достаточного количества чистого воздуха.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="terms__preview"
+    style="background-image: url('images/content/terms-bg.png')"
+  ></div>
+</section>
+
+        <section class="stages">
+  <div class="container">
+    <div class="stages__wrapper">
+      <h2 class="stages__title">
+        Этапы <span>монтажа</span> <span>вентиляции</span>
+      </h2>
+
+      <ul class="stages__list">
+        <li class="stages__item">
+          <div class="stages__item-icon">
+            <img
+              width="38"
+              height="38"
+              src="images/content/stages/1.png"
+              alt="Экспертная консультация"
+            />
+          </div>
+          <h3 class="stages__heading">1. Экспертная консультация</h3>
+          <div class="stages__text">
+            Мы запросим у вас исходные данные по проекту вентиляции и предложим
+            несколько вариантов. Вне зависимости от того, кого вы выберете в
+            качестве исполнителя, мы подберем наиболее подходящее решение и
+            проконсультируем по возникшим вопросам.
+          </div>
+        </li>
+        <li class="stages__item">
+          <div class="stages__item-icon">
+            <img
+              width="38"
+              height="38"
+              src="images/content/stages/2.png"
+              alt="Составление проектной документации"
+            />
+          </div>
+          <h3 class="stages__heading">2. Составление проектной документации</h3>
+          <div class="stages__text">
+            Команда поможет вам в составлении четкого и прозрачного технического
+            задания, а проектные специалисты создадут на его основе эскиз и
+            разработают проект вентиляции. Все эти процессы занимают не более 2
+            недель.
+          </div>
+        </li>
+        <li class="stages__item">
+          <div class="stages__item-icon">
+            <img
+              width="38"
+              height="38"
+              src="images/content/stages/3.png"
+              alt=" Поставка оборудования и материалов"
+            />
+          </div>
+          <h3 class="stages__heading">3. Поставка оборудования и материалов</h3>
+          <div class="stages__text">
+            После того, как вы согласуете проект вентиляции, мы займемся
+            поставкой оборудования и материалов. Вы можете быть уверены в
+            качестве привозимых конструкций и деталей – мы работаем только с
+            теми производителями, которые прошли проверку временем.
+          </div>
+        </li>
+        <li class="stages__item">
+          <div class="stages__item-icon">
+            <img
+              width="38"
+              height="38"
+              src="images/content/stages/4.png"
+              alt=" Монтаж вентиляции"
+            />
+          </div>
+          <h3 class="stages__heading">4. Монтаж вентиляции</h3>
+          <div class="stages__text">
+            На этом этапе ваше присутствие не понадобится. Конечно, если вы сами
+            не захотите присутствовать. Здесь мы осуществим монтаж вентиляции:
+            воздуховодов, вентиляционного оборудования и дополнительных
+            элементов, обязательных для работы системы.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="without-delays">
+  <div class="container">
+    <div class="without-delays__wrapper">
+      <div
+        class="without-delays__preview"
+        style="background-image: url('images/content/without-delays-bg.png')"
+      ></div>
+      <div class="without-delays__offer">
+        <h2 class="without-delays__title">
+          Смонтируем систему вентиляции без задержек и доплат
+        </h2>
+
+        <ul class="without-delays__list">
+          <li class="without-delays__item">
+            Установим оборудование и выполним подключение.
+          </li>
+          <li class="without-delays__item">Установим вытяжку и приток.</li>
+          <li class="without-delays__item">Проложим сеть воздуховодов.</li>
+          <li class="without-delays__item">
+            Установим диффузоры, дефлекторы, воздушные клапаны, решетки и другие
+            устройства.
+          </li>
+          <li class="without-delays__item">Подключим систему автоматики.</li>
+          <li class="without-delays__item">
+            Произведем необходимые строительные работы.
+          </li>
+        </ul>
+
+        <div class="without-delays__bottom">
+          <button class="without-delays__btn btn btn--call" type="button">
+            Вызвать мастера
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="consist">
+  <div class="container">
+    <h2 class="consist__title">
+      Из чего состоит <span>вентиляционная система</span>
+    </h2>
+
+    <div class="consist__text">
+      <p>
+        Вентиляционная система состоит из нескольких блоков, часть из которых
+        устанавливается на внутренних стенах помещений, а часть – на наружных,
+        например, оцинкованные воздуховоды, которые располагаются на фасаде
+        зданий. Также часты случаи монтирования такой системы в потолках, на
+        крышах, и совсем редко – в нежилых комнатах.
+      </p>
+      <p>
+        Для ее эффективной работы, нужен специальный проект, который технический
+        отдел составляет индивидуально под каждого заказчика – это автоматически
+        становится гарантией того, что система будет работать как часы. Этот
+        проект основывается на пожеланиях заказчика и на первичном выезде
+        инженера – бесплатным по городу Москве и платным по области.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="peculiarities">
+  <div class="container">
+    <div class="peculiarities__wrapper">
+      <h2 class="peculiarities__title">Особенности монтажных работ</h2>
+
+      <div class="peculiarities__text">
+        <p>
+          Определение вида вентиляционной системы для объекта производится на
+          стадии проекта. Это зависит от нескольких факторов:
+        </p>
+      </div>
+
+      <ul class="peculiarities__list">
+        <li class="peculiarities__item">назначение строения;</li>
+        <li class="peculiarities__item">географическое место расположения;</li>
+        <li class="peculiarities__item">интенсивность загрязнения;</li>
+        <li class="peculiarities__item">объёмы помещений;</li>
+        <li class="peculiarities__item">
+          количество персонала (жильцов, посетителей);
+        </li>
+        <li class="peculiarities__item">
+          санитарно-гигиенические требования к параметрам воздушной среды.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="commissioning">
+  <div class="container">
+    <div class="commissioning__wrapper">
+      <div
+        class="commissioning__preview"
+        style="background-image: url(images/content/commissioning.png)"
+      ></div>
+      <div class="commissioning__offer">
+        <h2 class="commissioning__title">Пусконаладочные работы</h2>
+
+        <div class="commissioning__text">
+          <p>
+            После завершения монтажных работ осуществляем весь комплекс
+            пусконаладочных мероприятий. В этот этап входят:
+          </p>
+        </div>
+
+        <ul class="commissioning__list">
+          <li class="commissioning__item">
+            Пробный запуск вентустановок и другого дополнительного оборудования
+            практическим опробованием работы во всех установленных проектом
+            режимах.
+          </li>
+          <li class="commissioning__item">
+            Проверка сетей воздуховодов, каналов на наличие утечек, устранение
+            дефектов при обнаружении.
+          </li>
+          <li class="commissioning__item">
+            Измерение эксплуатационных показателей вентиляторов и другого
+            оборудования – производительность, давление, скорость потока,
+            температура, влажность, уровень шума и вибрации. Эти операции
+            выполняем с применением точного оборудования – дифманометры,
+            анемометры, микроманометры.
+          </li>
+          <li class="commissioning__item">
+            Проверка работоспособности систем автоматизации, управления и
+            контроля.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="guarantee">
+  <div class="container">
+    <h2 class="guarantee__title">
+      Предоставляем гарантии на ремонт и обслуживание вентиляции
+    </h2>
+
+    <div class="guarantee__inner">
+      <div class="guarantee__text">
+        <p>
+          Вентиляция – это одно из самых важных систем, которые находятся в
+          наших домах. Именно вентиляция отвечает за комфорт, свежесть и уют в
+          доме. И наверняка каждый из нас надеется на то, что это замечательное
+          климатическая система прослужит долгие годы.
+        </p>
+
+        <p>
+          Чтобы вы были на 100% уверены в долговечности своей вентиляции,
+          компания «Клим Сервис» предоставляет выгодную гарантию.
+        </p>
+      </div>
+      <ul class="guarantee__list">
+        <li class="guarantee__item guarantee__item--work">
+          <div class="guarantee__icon">
+            <img
+              width="49"
+              height="49"
+              src="images/icons/warranty.svg"
+              alt=""
+            />
+          </div>
+          <p class="guarantee__descr">
+            Гарантия на <span>проведенные работы</span>
+          </p>
+        </li>
+        <li class="guarantee__item guarantee__item--spare-parts">
+          <div class="guarantee__icon">
+            <img
+              width="49"
+              height="49"
+              src="images/icons/warranty-1.svg"
+              alt=""
+            />
+          </div>
+          <p class="guarantee__descr">
+            Гарантия на <span>используемые запчасти</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="call">
+  <div class="container">
+    <div
+      class="call__wrapper"
+      style="background-image: url('images/content/call-bg.jpg')"
+    >
+      <div class="call__offer">
+        <h2 class="call__title">
+          Вызовите мастера для профилактики вентиляции
+        </h2>
+        <div class="call__text">
+          <p>
+            Мы свяжемся с Вами для подтверждения
+            <span>
+              заявки и уточнения времени <span class="call__arrow"></span
+            ></span>
+          </p>
+        </div>
+      </div>
+      <div class="call__right">
+        <button class="call__btn btn" type="button">
+          Оставить заявку на обслуживание
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts contacts--video">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__offer">
+        <h2 class="contacts__title">Наши контакты</h2>
+
+        <ul class="contacts__links">
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--phone"
+              href="tel:+74951217770"
+            >
+              +7 (495) 121 77 70
+            </a>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__link contacts__link--address">
+              Москва, Варшавское шоссе, 28А
+            </address>
+          </li>
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--mail"
+              href="mailto:info@clim-service.ru"
+            >
+              info@clim-service.ru
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--instagram" href="#"
+              >Наш инстаграм</a
+            >
+          </li>
+        </ul>
+
+        <div class="contacts__download">
+          <a
+            class="contacts__download-link contacts__download-link--download"
+            href="#"
+            >Скачай прайс-лист</a
+          >
+          <a class="contacts__download-link" href="#">Для юридических лиц</a>
+        </div>
+
+        <button class="contacts__btn btn" type="button">Вызвать мастера</button>
+      </div>
+      <div class="contacts__map map">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7BujL88OLnw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__text">
+      <p>
+        © 2019. <strong>Клим Сервис.</strong> Все права защищены.
+        <a href="#">Политика конциденциальности.</a> <br />
+        <a href="#">Карта сайта</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=7BujL88OLnw -->
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->
