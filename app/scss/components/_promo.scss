@@ -1,0 +1,159 @@
+.promo {
+  font-family: $Circe;
+  position: relative;
+  &__wrapper {
+    min-height: 640px;
+    @include adaptive-value('padding-top', 50, 30, 1);
+    @include adaptive-value('padding-bottom', 50, 30, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      min-height: auto;
+    }
+  }
+  &__title {
+    @include fz45();
+    max-width: 510px;
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+    @include breakpointsMaxW($bp-991) {
+      margin: 0 auto;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    @include breakpointsMaxW($bp-768) {
+      margin-bottom: 30px;
+    }
+  }
+  &__offer {
+    max-width: 580px;
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 180px;
+      justify-content: center;
+    }
+  }
+
+  &__heading {
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #31303d;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__btn {
+    @include breakpointsMaxW($bp-991) {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    padding: 20px;
+    padding-top: 75px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    box-shadow: 0px 11px 51px 0px rgba(28, 28, 28, 0.09);
+    border-radius: 10px;
+    text-align: center;
+
+    &::after {
+      @include elDef();
+      width: 44px;
+      height: 40px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--free {
+      &::after {
+        @include backgroundImage(
+          url('../images/icons/air-conditioner.svg'),
+          contain
+        );
+      }
+    }
+    &--warranty {
+      &::after {
+        @include backgroundImage(
+          url('../images/icons/warranty-2.svg'),
+          contain
+        );
+      }
+    }
+    &--transportation {
+      &::after {
+        @include backgroundImage(
+          url('../images/icons/transportation.svg'),
+          contain
+        );
+      }
+    }
+  }
+
+  &__preview {
+    position: absolute;
+    top: 0;
+    right: max(15px, calc((100% - 1200px) / 2));
+    width: 620px;
+    height: 700px;
+    @include background(contain);
+    z-index: -1;
+
+    @include breakpointsMaxW($bp-container) {
+      width: calc(400px + (620 - 400) * ((100vw - 991px) / (1230 - 991)));
+      height: calc(550px + (700 - 550) * ((100vw - 991px) / (1230 - 991)));
+      right: 15px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      width: 100%;
+      height: 700px;
+      position: static;
+      width: calc(280px + (620 - 280) * ((100vw - 375px) / (991 - 375)));
+      height: calc(300px + (700 - 300) * ((100vw - 375px) / (991 - 375)));
+      margin: 0 auto;
+    }
+  }
+
+  &--ventilation {
+    .promo {
+      &__preview {
+        height: 430px;
+        width: 910px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: max(0px, calc((100% - 2000px) / 2));
+
+        @include breakpointsMaxW(1440px) {
+          width: calc(600px + (910 - 600) * ((100vw - 991px) / (1440 - 991)));
+          height: calc(330px + (430 - 330) * ((100vw - 991px) / (1440 - 991)));
+        }
+
+        @include breakpointsMaxW($bp-991) {
+          width: calc(320px + (910 - 320) * ((100vw - 375px) / (991 - 375)));
+          height: calc(270px + (430 - 270) * ((100vw - 375px) / (991 - 375)));
+          margin-top: 100px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

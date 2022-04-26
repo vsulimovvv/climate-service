@@ -64,6 +64,11 @@ body {
   width: 135px;
   height: 60px;
   flex-shrink: 0;
+
+  @include breakpointsMaxW($bp-991) {
+    width: 100px;
+    height: 40px;
+  }
   img {
     @include img(contain);
   }
