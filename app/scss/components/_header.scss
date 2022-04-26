@@ -66,6 +66,11 @@
     @include breakpointsMaxW($bp-container) {
       font-size: calc(13px + (17 - 13) * ((100vw - 991px) / (1230 - 991)));
     }
+    padding: 15px 17px;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 700;
+
     @include breakpointsMaxW($bp-991) {
       display: none;
     }

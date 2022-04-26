@@ -51,20 +51,38 @@
       width: 100%;
       color: var(--color-dark);
       border: 1px solid #e7e7e7;
-      border-radius: 5px;
-      padding: 10px 20px;
+      border-radius: 10px;
+      padding: 20px;
+      font-weight: 400;
+      @include fz18();
+      @include breakpointsMaxW($bp-768) {
+        padding: 15px 20px;
+      }
+
+      &::placeholder {
+        font-weight: 400;
+      }
     }
 
     &__btn {
       display: block;
       width: 100%;
       margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-transform: none;
+
+      @include breakpointsMaxW($bp-768) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+      }
     }
   }
 
   &__container {
     width: calc(100% - 40px);
-    max-width: 470px;
+    max-width: 500px;
     background-color: #fafafa;
     transition: 250ms ease-in;
     position: relative;
@@ -72,7 +90,10 @@
     max-height: calc(100% - 100px);
     border-radius: 10px;
 
-    @include adaptive-value('padding', 37, 15, 1);
+    @include adaptive-value('padding-left', 37, 15, 1);
+    @include adaptive-value('padding-right', 37, 15, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     display: flex;
     flex-direction: column;

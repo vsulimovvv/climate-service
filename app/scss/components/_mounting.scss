@@ -93,5 +93,13 @@
     bottom: 0;
     transform: translateY(50%);
     text-transform: none;
+    padding: 15px 17px;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 700;
+
+    &:active {
+      transform: scale(0.96) translateY(50%);
+    }
   }
 }

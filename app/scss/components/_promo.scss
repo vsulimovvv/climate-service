@@ -73,6 +73,41 @@
     border-radius: 10px;
     text-align: center;
 
+    &:first-child {
+      &::before {
+        @include elDef();
+        width: 38px;
+        height: 38px;
+        top: 7px;
+        left: 7px;
+        @include backgroundImage(
+          url('../images/content/promo-decor.png'),
+          contain
+        );
+      }
+    }
+
+    &:last-child {
+      &::before {
+        @include elDef();
+        width: 38px;
+        height: 38px;
+        top: 7px;
+        right: 7px;
+        @include backgroundImage(
+          url('../images/content/promo-decor.png'),
+          contain
+        );
+        transform: rotate(90deg);
+
+        @include breakpointsMaxW($bp-576) {
+          top: initial;
+          bottom: 7px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
     &::after {
       @include elDef();
       width: 44px;
@@ -90,6 +125,7 @@
         );
       }
     }
+
     &--warranty {
       &::after {
         @include backgroundImage(
@@ -98,6 +134,7 @@
         );
       }
     }
+
     &--transportation {
       &::after {
         @include backgroundImage(

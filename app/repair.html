@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <div class="popup popup--service">
+    <div class="popup popup--call">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -38,19 +38,22 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Заявка на услугу “Испытательный комплекс”</h2>
+      <h2 class="popup__title">Вызвать мастера</h2>
       <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+        <p>
+          уточните необходимые данные и мастер свяжется с Вами для подтверждения
+          вызова
+        </p>
       </div>
 
       <form class="request__form form-submit">
         <div class="form-submit__group">
-          <label class="form-submit__label" for="service-name">Имя</label>
+          <label class="form-submit__label" for="call-name">Имя</label>
           <div class="form-submit__input-wrap form-submit__input-wrap--name">
             <input
               class="form-submit__input"
               name="name"
-              id="service-name"
+              id="call-name"
               type="text"
               placeholder="Введите ваше имя"
               required
@@ -58,125 +61,36 @@
           </div>
         </div>
         <div class="form-submit__group">
-          <label class="form-submit__label" for="service-tel">
+          <label class="form-submit__label" for="call-tel">
             Контактный телефон
           </label>
           <div class="form-submit__input-wrap form-submit__input-wrap--phone">
             <input
               class="form-submit__input"
               name="tel"
-              id="service-tel"
+              id="call-tel"
               type="tel"
               placeholder="+7 (___) ___-__-__"
               required
             />
           </div>
-        </div>
-
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="popup popup--product">
-  <div class="popup__container">
-    <button class="popup__close" type="button" aria-label="Закрыть">
-      <svg width="15" height="15">
-        <use xlink:href="images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <div class="popup__wrapper">
-      <h2 class="popup__title">Заказ насоса ДГН СЕРИЯ</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
-
-      <form class="request__form form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="product-name">Имя</label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+          <label class="form-submit__label" for="call-address">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
             <input
               class="form-submit__input"
-              name="name"
-              id="product-name"
+              name="address"
+              id="call-address"
               type="text"
-              placeholder="Введите ваше имя"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="product-tel">
-            Контактный телефон
-          </label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
-            <input
-              class="form-submit__input"
-              name="tel"
-              id="product-tel"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
+              placeholder="Укажите адрес"
               required
             />
           </div>
         </div>
 
         <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="popup popup--consultation">
-  <div class="popup__container">
-    <button class="popup__close" type="button" aria-label="Закрыть">
-      <svg width="15" height="15">
-        <use xlink:href="images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <div class="popup__wrapper">
-      <h2 class="popup__title">Заказать консультацию</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
-
-      <form class="request__form form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="consultation-name">Имя</label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--name">
-            <input
-              class="form-submit__input"
-              name="name"
-              id="consultation-name"
-              type="text"
-              placeholder="Введите ваше имя"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="consultation-tel">
-            Контактный телефон
-          </label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
-            <input
-              class="form-submit__input"
-              name="tel"
-              id="consultation-tel"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
-              required
-            />
-          </div>
-        </div>
-
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
+          Оставить заявку
         </button>
       </form>
     </div>
@@ -205,7 +119,97 @@
 
     <ul class="mobile-menu__body">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Услуги</a>
+        <div class="mobile-menu-box accordion">
+          <div class="mobile-menu-box__top">
+            <a class="mobile-menu-box__name" href="#">Услуги</a>
+            <button
+              class="mobile-menu-box__btn accordion__control"
+              type="button"
+              aria-label="Открыть"
+            ></button>
+          </div>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Профилактика кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт холодильного оборудования</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Чистка вентиляции</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Чистка кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Установка кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт систем винтиляции
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Обслуживание кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Обслуживание вентиляционной системы</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Монтаж кониционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Заправка кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Диагностика кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Демонтаж кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Ремонт фанкойлов</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Обслуживание фанкойлов</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </li>
       <li class="mobile-menu__item">
         <a class="mobile-menu__link" href="#">Для юр.диц</a>
@@ -231,7 +235,72 @@
       <div class="header__menu menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#"> Услуги </a>
+            <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Профилактика кондиционера</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Ремонт холодильного оборудования</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Чистка вентиляции</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Чистка кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Установка кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Ремонт кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Ремонт систем винтиляции
+                  </a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Обслуживание кондиционеров</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Обслуживание вентиляционной системы</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Монтаж кониционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Заправка кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Диагностика кондиционера</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Демонтаж кондиционера</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Ремонт кондиционера</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Ремонт фанкойлов</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Обслуживание фанкойлов</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#"> Для юр. лиц </a>
@@ -249,7 +318,9 @@
       </div>
       <div class="header__tools">
         <a class="header__phone" href="tel:+74951282713">8 (495) 128-27-13</a>
-        <button class="header__btn btn" type="button">Вызвать мастера</button>
+        <button class="header__btn btn btn--call" type="button">
+          Вызвать мастера
+        </button>
       </div>
 
       <button class="header__toggle" type="button" aria-label="Открыть меню">
@@ -971,7 +1042,7 @@
           <a class="contacts__download-link" href="#">Для юридических лиц</a>
         </div>
 
-        <button class="contacts__btn btn" type="button">Вызвать мастера</button>
+        <button class="contacts__btn btn btn--call" type="button">Вызвать мастера</button>
       </div>
       <div class="contacts__map map">
         <iframe
