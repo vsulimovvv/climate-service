@@ -1,6 +1,7 @@
 .guarantee {
   @include adaptive-value('padding-top', 90, 50, 1);
   @include adaptive-value('padding-bottom', 90, 50, 1);
+ 
 
   &__title {
     @include fz45();
@@ -105,10 +106,28 @@
       &__inner {
         grid-template-columns: 1fr 500px;
         gap: 60px;
+
+        @include breakpointsMaxW($bp-991) {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        @include breakpointsMaxW($bp-768) {
+          gap: 30px;
+        }
       }
 
       &__text {
         max-width: 100%;
+      }
+
+      &__list {
+        @include breakpointsMaxW($bp-991) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpointsMaxW($bp-360) {
+          grid-template-columns: 1fr;
+        }
       }
 
       &__title {

@@ -1,0 +1,76 @@
+.boilers-repair {
+  font-family: $Circe;
+  color: #575757;
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__title {
+    @include fz45();
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    @include breakpointsMaxW($bp-991) {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__right {
+    width: 53%;
+
+    @include breakpointsMaxW($bp-991) {
+      width: 100%;
+      order: -1;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.6;
+    @include adaptive-value('font-size', 17, 15, 1);
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__preview {
+    width: 570px;
+    max-height: 600px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    z-index: -1;
+
+    @include breakpointsMaxW(1440px) {
+      right: 15px;
+      width: calc(400px + (570 - 400) * ((100vw - 991px) / (1920 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 450px;
+      width: 100%;
+      position: static;
+      transform: translateY(0);
+      margin: 0 auto;
+      max-height: 430px;
+      min-height: 300px;
+    }
+
+    img {
+      @include img(contain);
+    }
+  }
+}

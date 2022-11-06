@@ -1,0 +1,82 @@
+.boilers-service {
+  font-family: $Circe;
+  color: #575757;
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__title {
+    @include fz45();
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    @include breakpointsMaxW($bp-991) {
+      width: 100%;
+      order: -1;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.6;
+    @include adaptive-value('font-size', 17, 15, 1);
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__preview {
+    width: 720px;
+    max-height: 740px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: -175px;
+    transform: translateY(-50%);
+    z-index: -1;
+
+    @include breakpointsMaxW(1440px) {
+      left: 0;
+      width: calc(500px + (530 - 500) * ((100vw - 1230px) / (1920 - 1230)));
+    }
+
+    @include breakpointsMaxW($bp-container) {
+      left: -30px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 500px;
+      width: 100%;
+      position: static;
+      transform: translateY(0);
+      margin: 0 auto;
+      max-height: 500px;
+      min-height: 300px;
+    }
+
+    img {
+      @include img(contain);
+    }
+  }
+}

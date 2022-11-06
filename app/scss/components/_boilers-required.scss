@@ -1,0 +1,102 @@
+.boilers-required {
+  font-family: $Circe;
+  font-size: 17px;
+  font-weight: 300;
+  color: #575757;
+  @include adaptive-value('font-size', 17, 15, 1);
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__title {
+    max-width: 720px;
+    letter-spacing: 1.1px;
+    @include fz45();
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    height: 440px;
+    width: 720px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -110px;
+
+    img {
+      @include img(contain);
+    }
+
+    @include breakpointsMaxW($bp-container) {
+      left: 0;
+      width: calc(500px + (625 - 500) * ((100vw - 991px) / (1230 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      position: static;
+      transform: translateY(0);
+      order: 1;
+
+      width: 500px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      max-width: 400px;
+      width: 100%;
+      max-width: 400px;
+      min-height: 200px;
+      height: auto;
+    }
+  }
+
+  &__box {
+    background-color: var(--color-white);
+    border: 5px solid #d4d4d4;
+    padding: 40px;
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      max-width: 525px;
+
+      @include breakpointsMaxW($bp-container) {
+        max-width: calc(350px + (525 - 350) * ((100vw - 991px) / (1230 - 991)));
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        max-width: 100%;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
