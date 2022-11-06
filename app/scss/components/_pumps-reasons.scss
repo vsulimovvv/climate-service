@@ -1,0 +1,89 @@
+.pumps-reasons {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__title {
+    max-width: 390px;
+    letter-spacing: 1.1px;
+    @include fz45();
+    @include adaptive-value('margin-bottom', 60, 30, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 525px) 1fr;
+    gap: 50px;
+
+    @include breakpointsMaxW($bp-container) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__box {
+    background-color: var(--color-white);
+    border: 10px solid var(--color-accent);
+    border-radius: 10px;
+    padding: 35px 70px 35px 60px;
+    position: relative;
+    max-width: 525px;
+    font-size: 19px;
+    line-height: 1.6;
+
+    @include breakpointsMaxW($bp-container) {
+      margin-left: 15px;
+      padding-right: 30px;
+      padding-left: 50px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      padding: 20px 30px 20px 50px;
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -32px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+  }
+
+  &__item {
+    font-size: 18px;
+    position: relative;
+    padding-left: 28px;
+    line-height: 1.6;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 16px;
+    }
+
+    &::after {
+      @include elDef();
+      width: 18px;
+      height: 18px;
+      top: 4px;
+      left: 0;
+      @include backgroundImage(url('../images/content/checked.svg'), contain);
+    }
+  }
+}

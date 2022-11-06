@@ -103,7 +103,7 @@ $maxWidthContainer: 1230;
 //     right: max(15px, calc((100% - 1400px) / 2));
 
 @mixin fz45 {
-  @include adaptive-value('font-size', 45, 26, 1);
+  @include adaptive-value('font-size', 45, 24, 1);
   color: #2e2e2e;
   line-height: 1.2;
   font-weight: 700;
@@ -128,6 +128,12 @@ $maxWidthContainer: 1230;
 @mixin fz25 {
   @include adaptive-value('font-size', 25, 20, 1);
   line-height: 1.5;
+  color: #2e2e2e;
+  font-weight: 700;
+}
+@mixin fz28 {
+  @include adaptive-value('font-size', 28, 22, 1);
+  line-height: 1.3;
   color: #2e2e2e;
   font-weight: 700;
 }

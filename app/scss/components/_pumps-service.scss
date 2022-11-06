@@ -1,0 +1,85 @@
+.promo-service {
+  font-family: $Circe;
+  color: #575757;
+  background-color: #fafafa;
+  @include adaptive-value('font-size', 17, 15, 1);
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__title {
+    letter-spacing: 1.1px;
+    @include fz45();
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__left {
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    @include breakpointsMaxW($bp-768) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 425px;
+    max-height: 395px;
+    min-height: 300px;
+    object-fit: contain;
+    z-index: 1;
+
+    @include breakpointsMaxW($bp-container) {
+      width: calc(300px + (425 - 300) * ((100vw - 991px) / (1230 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      width: 380px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      margin-bottom: 30px;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      width: 300px;
+    }
+  }
+
+  &__box {
+    padding: 40px;
+    border: 5px solid #d4d4d4;
+    margin-left: -10px;
+    z-index: 0;
+    margin-top: -20px;
+    background-color: var(--color-white);
+    line-height: 1.6;
+
+    @include breakpointsMaxW($bp-container) {
+      padding: calc(20px + (40 - 20) * ((100vw - 991px) / (1230 - 991)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      padding: 30px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      padding: 20px;
+    }
+  }
+}

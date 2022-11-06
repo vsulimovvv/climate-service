@@ -23,6 +23,9 @@
       margin-bottom: 30px;
     }
   }
+  &__text {
+    margin-bottom: 35px;
+  }
   &__offer {
     max-width: 580px;
 
@@ -189,6 +192,55 @@
           height: calc(270px + (430 - 270) * ((100vw - 375px) / (991 - 375)));
           margin-top: 100px;
           margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &--pumps {
+    overflow: hidden;
+
+    .promo {
+      &__wrapper {
+        position: relative;
+      }
+
+      &__offer {
+        @include breakpointsMaxW($bp-container) {
+          max-width: 550px;
+        }
+
+        @include breakpointsMaxW($bp-991) {
+          max-width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+
+      &__preview {
+        position: absolute;
+        right: -90px;
+        width: 590px;
+        height: 545px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include breakpointsMaxW($bp-container) {
+          width: calc(400px + (590 - 400) * ((100vw - 991px) / (1230 - 991)));
+          height: calc(450px + (545 - 450) * ((100vw - 991px) / (1230 - 991)));
+          right: 0;
+        }
+
+        @include breakpointsMaxW($bp-991) {
+          position: static;
+          max-width: 400px;
+          width: 100%;
+          height: 400px;
+          transform: translateY(0);
+        }
+
+        @include breakpointsMaxW($bp-576) {
+          max-width: 300px;
+          height: 300px;
         }
       }
     }

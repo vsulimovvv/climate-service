@@ -1,0 +1,76 @@
+.repair-adv {
+  font-family: $Circe;
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__top {
+    text-align: center;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
+    @include fz45();
+  }
+
+  &__text {
+    @include adaptive-value('font-size', 19, 16, 1);
+
+    span {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 105px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 50px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  .repair-adv-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__img {
+      object-fit: contain;
+      margin-bottom: 20px;
+
+      @include breakpointsMaxW($bp-768) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__name {
+      font-size: 19px;
+      font-weight: 700;
+      color: #363636;
+      margin-bottom: 15px;
+
+      @include breakpointsMaxW($bp-768) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+  }
+}

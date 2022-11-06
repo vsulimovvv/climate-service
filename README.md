@@ -5,3 +5,4 @@
 Форма с вопросами: https://vsulimovvv.github.io/climate-service/app/questions.html  
 Монтаж вентиляций: https://vsulimovvv.github.io/climate-service/app/mounting.html  
 Ремонт и обслуживание вентиляций: https://vsulimovvv.github.io/climate-service/app/repair.html  
+Ремонт и обслуживание тепловых насосов: https://vsulimovvv.github.io/climate-service/app/repair-pumps.html  

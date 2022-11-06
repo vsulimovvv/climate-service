@@ -92,10 +92,31 @@
     font-weight: 400;
     color: #4f4f4f;
     @include adaptive-value('font-size', 20, 15, 1);
-  
 
     span {
       display: block;
+    }
+  }
+
+  &--cols {
+    font-family: $Circe;
+
+    .guarantee {
+      &__inner {
+        grid-template-columns: 1fr 500px;
+        gap: 60px;
+      }
+
+      &__text {
+        max-width: 100%;
+      }
+
+      &__title {
+        @include adaptive-value('font-size', 26, 21, 1);
+        font-weight: 400;
+        width: 90%;
+        margin-bottom: 15px;
+      }
     }
   }
 }

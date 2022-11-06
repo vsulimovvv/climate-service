@@ -1,0 +1,91 @@
+.repair-price {
+  font-family: $Circe;
+
+  &__title {
+    letter-spacing: 1.1px;
+    text-align: center;
+    @include fz45();
+    @include adaptive-value('margin-bottom', 70, 50, 1);
+  }
+
+  &__table {
+    @include breakpointsMaxW($bp-991) {
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+
+  &__list {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+
+    @include breakpointsMaxW($bp-991) {
+      min-width: 700px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    @include adaptive-value('font-size', 17, 14, 1);
+    color: #303030;
+    padding: 18px 35px;
+    justify-content: space-between;
+    padding-right: 110px;
+
+    @include breakpointsMaxW($bp-container) {
+      padding-right: 50px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      padding: 15px 20px;
+    }
+
+    &:nth-child(odd) {
+      background-color: #f7f7f7;
+    }
+
+    &:nth-child(1) {
+      background-color: #303030;
+      color: var(--color-white);
+      @include adaptive-value('font-size', 20, 17, 1);
+    }
+  }
+
+  &__left {
+    flex: 1;
+    margin-right: 30px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+    width: 100%;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-container) {
+      max-width: 340px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 300px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      max-width: 280px;
+    }
+  }
+
+  &__duration {
+    margin-right: 30px;
+  }
+
+  &__cost,
+  &__duration {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
