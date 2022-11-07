@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Клим Сервис</title>
+  </head>
+
+  <body>
+    <div class="popup popup--call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Вызвать мастера</h2>
+      <div class="popup__text">
+        <p>
+          уточните необходимые данные и мастер свяжется с Вами для подтверждения
+          вызова
+        </p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="call-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="call-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="call-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="call-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+          <label class="form-submit__label" for="call-address">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="address"
+              id="call-address"
+              type="text"
+              placeholder="Укажите адрес"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Монтаж вентиляции</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <div class="mobile-menu-box__top">
+            <a class="mobile-menu-box__name" href="#">Услуги</a>
+            <button
+              class="mobile-menu-box__btn accordion__control"
+              type="button"
+              aria-label="Открыть"
+            ></button>
+          </div>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Профилактика кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт холодильного оборудования</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Чистка вентиляции</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Чистка кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Установка кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт систем винтиляции
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Обслуживание кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Обслуживание вентиляционной системы</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Монтаж кониционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Заправка кондиционеров</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Диагностика кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Демонтаж кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Ремонт кондиционера</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Ремонт фанкойлов</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Обслуживание фанкойлов</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Для юр.диц</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О нас</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">База знаний</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Профилактика кондиционера</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Ремонт холодильного оборудования</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Чистка вентиляции</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Чистка кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Установка кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Ремонт кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Ремонт систем винтиляции
+                  </a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Обслуживание кондиционеров</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Обслуживание вентиляционной системы</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Монтаж кониционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Заправка кондиционеров</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Диагностика кондиционера</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Демонтаж кондиционера</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Ремонт кондиционера</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Ремонт фанкойлов</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Обслуживание фанкойлов</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Для юр. лиц </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> О нас </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> База знаний </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Контакты </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__tools">
+        <a class="header__phone" href="tel:+74951282713">8 (495) 128-27-13</a>
+        <button class="header__btn btn btn--call" type="button">
+          Вызвать мастера
+        </button>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="promo promo--viessman">
+  <div class="container">
+    <div class="promo__wrapper">
+      <div class="promo__offer">
+        <h2 class="promo__title">Ремонт паровых котлов
+          Viessman</h2>
+
+        <p class="promo__text">
+          Паровые котлы – это вид отопительной техники, использующий в работе энергию
+          сгораемого топлива, за счёт чего происходит превращение воды в пар. Чтобы такое
+          оборудование выполняло возложенные разработчиком функции в полной мере,
+          необходимо производить межсезонные профилактические работы.
+        </p>
+
+        <ul class="promo__list">
+          <li class="promo__item promo__item--free">
+            <div class="promo__heading">
+              <p>Бесплатная <span> диагностика </span></p>
+            </div>
+          </li>
+          <li class="promo__item promo__item--warranty">
+            <div class="promo__heading">
+              <p>Гарантия до 12 <span>месяцев</span></p>
+            </div>
+          </li>
+          <li class="promo__item promo__item--transportation">
+            <div class="promo__heading">
+              <p>Выезд от 30 <span>минут</span></p>
+            </div>
+          </li>
+        </ul>
+
+        <button class="promo__btn btn btn--call">Вызвать мастера</button>
+      </div>
+
+      <div
+        class="promo__preview"
+        style="background-image: url('images/content/promo-viessman.png')"
+      ></div>
+    </div>
+  </div>
+</section>
+
+        <section class="boilers-malfunctions">
+  <div class="container">
+    <div class="boilers-malfunctions__wrapper">
+      <div class="boilers-malfunctions__offer">
+        <h2 class="boilers-malfunctions__title">
+          Производим ремонт всех видов котельного оборудования Viessman
+        </h2>
+        <div class="boilers-malfunctions__text">
+          <p>
+            «Клим Сервис» осуществляет качественный и быстрый ремонт водогрейных
+            котлов типа КВ-ГМ, ПТВМ и паровых котлов типа Е, ДЕ, ДКВр, КЕ,
+            газовых и дизельных систем самой различной мощности. Также следует
+            отметить оперативные сроки реагирования на тот или иной запрос.
+          </p>
+
+          <p>
+            Нашей основной задачей является диагностика, предотвращение
+            неисправности отопительной системы. Мы объясним причину поломки
+            котла, выдадим рекомендации, чтобы такого в дальнейшем не
+            повторялось, а также осуществим высококачественный ремонт котлов
+            ДКВр и ПТВМ, и самое главное, по приемлемым ценам!
+          </p>
+        </div>
+      </div>
+
+      <div class="boilers-malfunctions__box">
+        <span class="boilers-malfunctions__heading"> Комплекс работ </span>
+        <ul class="boilers-malfunctions__list">
+          <li class="boilers-malfunctions__item">
+            очистка от солевых отложений;
+          </li>
+          <li class="boilers-malfunctions__item">замена или ремонт трубок;</li>
+          <li class="boilers-malfunctions__item">
+            проверка и ремонт системы предохранителей;
+          </li>
+          <li class="boilers-malfunctions__item">
+            диагностика и наладка автоматики;
+          </li>
+          <li class="boilers-malfunctions__item">
+            замена вышедших из строя деталей;
+          </li>
+          <li class="boilers-malfunctions__item">
+            диагностика корпуса на наличие повреждений;
+          </li>
+          <li class="boilers-malfunctions__item">
+            проверка соединений и запорной арматуры;
+          </li>
+          <li class="boilers-malfunctions__item">
+            тестирование и замена регуляторов;
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="boilers-required boilers-required--viessman">
+  <div class="container">
+    <h2 class="boilers-required__title">
+      Когда и почему требуется ремонт парового котла Viessman?
+    </h2>
+    <div class="boilers-required__wrapper">
+      <div class="boilers-required__img">
+        <img src="images/content/boilers-required-viessman.png" alt="boilers-required" />
+      </div>
+      <div class="boilers-required__box">
+        <p>
+          Со временем котлы стареют и выходят из строя. Ускоряет процесс
+          неправильная эксплуатация, плохая вода, отсутствие сервисного
+          обслуживания, в следствии чего котлы выходят из строя и котельная
+          нуждается в ремонте.
+        </p>
+        <p>
+          Наша компания выполняет ремонт котлов и другого котельного
+          оборудования в бытовых и промышленных котельных. Так же мы производим
+          обслуживание, реконструкцию и модернизацию бытовых котельных, и
+          техническое перевооружение (модернизацию) промышленных и коммунальных
+          котельных в Москве и Московской области.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="viessman-reasons">
+  <div class="container">
+    <div class="viessman-reasons__wrapper">
+      <div class="viessman-reasons__left">
+        <h2 class="viessman-reasons__title">
+          Особенности и частые
+          поломки котлов Viessman
+        </h2>
+        <p class="viessman-reasons__text">
+          Практика показывает, что чаще всего мастера Клим Сервис в Москве
+          сталкиваются со следующими видами поломок паровых котельных установок.
+        </p>
+        <div class="viessman-reasons__box">
+          <p>
+            Обратитесь к нам и узнайте, сколько стоит диагностика и ремонт
+            вышедшего из строя парового котла.
+          </p>
+          <div class="viessman-reasons__img">
+            <img
+              width="55"
+              height="55"
+              src="images/content/recommendation.svg"
+              alt="reccomendations"
+            />
+          </div>
+        </div>
+      </div>
+      <ul class="viessman-reasons__list">
+        <li class="viessman-reasons__item">
+          Несоответствие давления нормируемым показателям.
+        </li>
+        <li class="viessman-reasons__item">
+          Выход из строя водоуказательного прибора.
+        </li>
+        <li class="viessman-reasons__item">Поломка питательного насоса.</li>
+        <li class="viessman-reasons__item">Котёл работает с перегревом пара.</li>
+        <li class="viessman-reasons__item">
+          Низкое качество распыления топлива.
+        </li>
+        <li class="viessman-reasons__item">
+          Периодическое затухание пламени в горелке.
+        </li>
+        <li class="viessman-reasons__item">Пульсация факела, рваное пламя.</li>
+        <li class="viessman-reasons__item">
+          Выход из строя предохранительного клапана
+        </li>
+        <li class="viessman-reasons__item">
+          Выбросы продуктов сгорания с мощным хлопком.
+        </li>
+        <li class="viessman-reasons__item">Перегрев материалов обшивки.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="viessman-allday">
+  <div class="container">
+    <div class="viessman-allday__wrapper">
+      <div class="viessman-allday__left">
+        <div class="viessman-allday__offer">
+          <h2 class="viessman-allday__title">
+            Рабтает круглосуточно и без выходных
+          </h2>
+          <div class="viessman-allday__text">
+            <p>
+              Наши специалисты готовы круглосуточно прибыть в любую точку Москвы
+              и области для проведения ремонта паровых газовых котлов всех
+              представленных на российском рынке производителей.
+            </p>
+
+            <p>
+              Мы готовы оперативно выполнить весь комплекс мероприятий уже при
+              первом посещении. Для этого аварийные выездные бригады
+              укомплектованы всеми необходимыми материалами и инструментами.
+            </p>
+          </div>
+        </div>
+        <div class="viessman-allday__box">
+          <p>
+            Если ремонт на объекте невозможно, вы обеспечим его на собственной
+            ремонтной базе, оснащенной самым современным оборудованием.
+            Перевозка крупногабаритной техники производится автотранспортом
+            компании, имеющим гидроподъемник.
+          </p>
+        </div>
+      </div>
+      <div class="viessman-allday__preview">
+        <img src="images/content/viessman-allday.png" alt="preview" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="repair-adv repair-adv--viessman">
+  <div class="container">
+    <div class="repair-adv__top">
+      <h2 class="repair-adv__title">
+        Почему нам доверяют <br />
+        ремонт и обслуживание паровых котлов Viessman
+      </h2>
+      <p class="repair-adv__text">
+        Мы имеем достаточный опыт, чтобы качественно провести ремонт любого
+        котельного оборудования,<span></span> при этом предлагаем разумные цены
+        и индивидуально подходим к каждому заказу. <br />
+        У нас бесплатная диагностика паровых котлов.
+      </p>
+    </div>
+
+    <ul class="repair-adv__list">
+      <li class="repair-adv-item">
+        <img
+          class="repair-adv-item__img"
+          src="images/content/repair-adv/1.svg"
+          alt="medal"
+          width="46"
+          height="46"
+        />
+
+        <span class="repair-adv-item__name">Высокое качество ремонта</span>
+        <p class="repair-adv-item__text">
+          Мы выполняем ремонт быстро и качественно, используем надежные детали,
+          оформляем гарантию на все работы и запчасти. Диагностика четко
+          определяет необходимость в ремонте или замене деталей, что экономит
+          ваши средства.
+        </p>
+      </li>
+      <li class="repair-adv-item">
+        <img
+          class="repair-adv-item__img"
+          src="images/content/repair-adv/2.svg"
+          alt="medal"
+          width="46"
+          height="46"
+        />
+
+        <span class="repair-adv-item__name">Ремонт любой сложности</span>
+        <p class="repair-adv-item__text">
+          Специалисты «Клим Сервис» не отказываются от сложного или мелкого
+          ремонта. Мы заботимся о вас и вашей технике, а не о быстрой выгоде. Мы
+          нацелены на построение доверительных и долговременных отношений с
+          каждым клиентом.
+        </p>
+      </li>
+      <li class="repair-adv-item">
+        <img
+          class="repair-adv-item__img"
+          src="images/content/repair-adv/3.svg"
+          alt="medal"
+          width="46"
+          height="46"
+        />
+
+        <span class="repair-adv-item__name">Выгодная стоимость</span>
+        <p class="repair-adv-item__text">
+          Наши цены конкурентны и соответствуют нашим принципам – длительные и
+          честные отношения с клиентами. Мы называем цену, точно определив
+          задачу, не приступаем к работе до согласования стоимости и не меняем
+          цену в процессе работы.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="repair-price repair-price--viessman">
+  <div class="container">
+    <h2 class="repair-price__title">Цены на ремонт паровых котлов</h2>
+
+    <div class="repair-price__table">
+      <ul class="repair-price__list">
+        <li class="repair-price__item">
+          <div class="repair-price__left">Название услуги</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">Длительность</div>
+            <div class="repair-price__cost">Стоимость, руб.</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">Выезд мастера и диагностика</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">бесплатно</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Котел не включается щелкает реле / Настенный котел щелкает и не
+            включается
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 940</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Котел настенный двухконтурный не греет воду
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 940</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Напольный котел заменить газовые горелки
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 990</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Напольный котел потек теплообменник
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 1790</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Напольный котел тухнет / Настенный котел потух
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 1290</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">Котел плохо греет воду и хлопки</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 1490</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">Котел не зажигается</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 290</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">Котел пропускает газ</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 990</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Шумно работает насос на газовом котле
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 1790</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">На стояке утечка газа</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 1290</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">Демонтаж парового котл</div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 1490</div>
+          </div>
+        </li>
+        <li class="repair-price__item">
+          <div class="repair-price__left">
+            Сломалась трубка подачи газа в котле
+          </div>
+          <div class="repair-price__right">
+            <div class="repair-price__duration">2-3 часа</div>
+            <div class="repair-price__cost">от 290</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="viessman-handling">
+  <div class="container">
+    <div class="viessman-handling__wrapper">
+      <div class="viessman-handling__left">
+        <h2 class="viessman-handling__title">
+          Паровые котлы Viessman большой мощности
+        </h2>
+        <p class="viessman-handling__text">
+          являются потенциальным источником опасности. Чтобы избежать серьезных
+          проблем и дорогостоящего ремонта необходимо строго придерживаться всех
+          требований по эксплуатации, прописанных производителями оборудования.
+          Одно из главных условий для сохранения долговечности и эффективности
+          установленного у вас парогенератор – регулярное техническое
+          обслуживание паровых котлов.
+        </p>
+      </div>
+      <div class="viessman-handling__right">
+        <p>
+          Мы предлагаем нашим клиентам различные сервисные программы, которые
+          включают плановое техобслуживание отопительной системы и аварийные
+          выезды в случае возникновения неполадок. При заключении долгосрочного
+          договора, вы получаете максимальный эффект при минимальных затратах.
+          На все виды работ и используемые материалы мы предоставляем
+          официальную гарантию центра.
+        </p>
+        <p>
+          Мы готовы оперативно выполнить весь комплекс мероприятий уже при
+          первом посещении. Для этого аварийные выездные бригады укомплектованы
+          всеми необходимыми материалами и инструментами.
+        </p>
+
+        <p>
+          Если ремонт на объекте невозможно, вы обеспечим его на собственной
+          ремонтной базе, оснащенной самым современным оборудованием. Перевозка
+          крупногабаритной техники производится автотранспортом компании,
+          имеющим гидроподъемник.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="viessman-service">
+  <div class="container">
+    <div class="viessman-service__wrapper">
+      <div class="viessman-service__preview">
+        <img src="images/content/viessman-service.png" alt="preview" />
+      </div>
+      <div class="viessman-service__right">
+        <h2 class="viessman-service__title">
+          Обслуживание паровых котлов Viessman
+        </h2>
+        <div class="viessman-service__text">
+          <p>
+            Специалисты нашей компании готовы выполнить весь спектр работ по
+            ремонту котлов на объекте заказчика. Плановое обслуживание
+            выполняется ежемесячно по заранее согласованному с клиентом графику.
+            При возникновении необходимости внепланового или аварийного ремонта
+            наши мастера прибудут на объект в течение суток или 3-х часов с
+            момента получения заявки. Быстрое реагирование ремонтной бригады
+            обеспечивается установленными сигналами телеметрии, которые выведены
+            на пульт в диспетчерской. Это также дает нам возможность удаленного
+            отключения оборудования в случае возникновения внештатных ситуаций.
+          </p>
+
+          <p>
+            Для заказа услуги технического обслуживания или ремонта паровых
+            водогрейных котлов звоните нам по телефону, указанному на сайте, и
+            оставьте заявку.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="viessman-repair">
+  <div class="container">
+    <div class="viessman-repair__wrapper">
+      <div class="viessman-repair__preview">
+        <img src="images/content/viessman-repair.png" alt="preview" />
+      </div>
+      <div class="viessman-repair__right">
+        <h2 class="viessman-repair__title">
+          Ремонт котельного оборудования Viessman
+        </h2>
+        <div class="viessman-repair__text">
+          <p>
+            В современной котельной, кроме котла установлено большое количество
+            вспомогательного оборудования. Как и любое другое инженерное
+            оборудование со временем требует технического обслуживания, ремонта
+            либо замены. Предохранительные клапаны, мембранные баки,
+            автоматические воздухоотводчики, сервоприводы трехходовых кранов,
+            трехходовые краны, фильтры, системы водоподготовки и другое
+            оборудование. Большие проблемы бывают с дымоходом. Раньше (да что
+            там и сейчас) строители не задумываются над монтажом правильного
+            дымохода. Обычно выкладывают кирпичом и всё. Хорошо ещё если
+            достаточным сечением. Но современные котлы требуют кислотостойких
+            материалов таких как нержавеющая сталь или пластик (ПВХ).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="guarantee guarantee--cols">
+  <div class="container">
+    <div class="guarantee__inner">
+      <div class="guarantee__left">
+        <h2 class="guarantee__title">
+          Инженеры компании подготовлены для ремонта всех типов тепловых насосов
+        </h2>
+        <div class="guarantee__text">
+          <p>
+            имеют техническую возможность и всё необходимое сервисное
+            оборудование, для того, чтобы произвести любой, даже технически
+            сложный капитальный ремонт теплового насоса, без транспортировки в
+            сервисный центр.
+          </p>
+
+          <p>
+            Так же команда «Клим Сервис» проводит диагностику репловых насосов
+            на высоком профессиональном уровне, дает гарантию на работы и
+            запчасти.
+          </p>
+        </div>
+      </div>
+      <ul class="guarantee__list">
+        <li class="guarantee__item guarantee__item--work">
+          <div class="guarantee__icon">
+            <img
+              width="49"
+              height="49"
+              src="images/icons/warranty.svg"
+              alt=""
+            />
+          </div>
+          <p class="guarantee__descr">
+            Гарантия на <span>проведенные работы</span>
+          </p>
+        </li>
+        <li class="guarantee__item guarantee__item--spare-parts">
+          <div class="guarantee__icon">
+            <img
+              width="49"
+              height="49"
+              src="images/icons/warranty-1.svg"
+              alt=""
+            />
+          </div>
+          <p class="guarantee__descr">
+            Гарантия на <span>используемые запчасти</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="call">
+  <div class="container">
+    <div
+      class="call__wrapper"
+      style="background-image: url('images/content/call-bg.jpg')"
+    >
+      <div class="call__offer">
+        <h2 class="call__title">
+          Вызовите мастера для профилактики вентиляции
+        </h2>
+        <div class="call__text">
+          <p>
+            Мы свяжемся с Вами для подтверждения
+            <span>
+              заявки и уточнения времени <span class="call__arrow"></span
+            ></span>
+          </p>
+        </div>
+      </div>
+      <div class="call__right">
+        <button class="call__btn btn" type="button">
+          Оставить заявку на обслуживание
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts contacts--video">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__offer">
+        <h2 class="contacts__title">Наши контакты</h2>
+
+        <ul class="contacts__links">
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--phone"
+              href="tel:+74951217770"
+            >
+              +7 (495) 121 77 70
+            </a>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__link contacts__link--address">
+              Москва, Варшавское шоссе, 28А
+            </address>
+          </li>
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--mail"
+              href="mailto:info@clim-service.ru"
+            >
+              info@clim-service.ru
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--instagram" href="#"
+              >Наш инстаграм</a
+            >
+          </li>
+        </ul>
+
+        <div class="contacts__download">
+          <a
+            class="contacts__download-link contacts__download-link--download"
+            href="#"
+            >Скачай прайс-лист</a
+          >
+          <a class="contacts__download-link" href="#">Для юридических лиц</a>
+        </div>
+
+        <button class="contacts__btn btn btn--call" type="button">Вызвать мастера</button>
+      </div>
+      <div class="contacts__map map">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7BujL88OLnw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__text">
+      <p>
+        © 2019. <strong>Клим Сервис.</strong> Все права защищены.
+        <a href="#">Политика конциденциальности.</a> <br />
+        <a href="#">Карта сайта</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=7BujL88OLnw -->
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

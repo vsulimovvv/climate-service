@@ -277,7 +277,6 @@
     @include breakpointsMaxW($bp-576) {
       padding-bottom: 230px;
       background-size: 700px;
-      // background-position: 85% 100%;
     }
 
     .promo {
@@ -325,6 +324,46 @@
         @include breakpointsMaxW($bp-576) {
           max-width: 300px;
           height: 300px;
+        }
+      }
+    }
+  }
+
+  &--viessman {
+    overflow: hidden;
+
+    .promo {
+      &__wrapper {
+        position: relative;
+      }
+
+      &__offer {
+        @include breakpointsMaxW($bp-991) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &__preview {
+        width: 560px;
+        height: 465px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+
+        @include breakpointsMaxW(1440px) {
+          right: 0;
+        }
+
+        @include breakpointsMaxW($bp-container) {
+          width: calc(330px + (560 - 330) * ((100vw - 991px) / (1230 - 991)));
+        }
+
+        @include breakpointsMaxW($bp-991) {
+          max-width: 400px;
+          width: 100%;
+          transform: translateY(0);
+          max-height: 400px;
+          min-height: 300px;
         }
       }
     }

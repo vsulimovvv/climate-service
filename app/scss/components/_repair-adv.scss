@@ -74,7 +74,11 @@
     }
   }
 
-  &--boilers{
-    
+  &--viessman {
+    .repair-adv {
+      &__top {
+        max-width: 1070px;
+      }
+    }
   }
 }

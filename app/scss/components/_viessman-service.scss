@@ -1,4 +1,4 @@
-.boilers-repair {
+.viessman-service {
   font-family: $Circe;
   color: #575757;
   @include adaptive-value('padding-top', 80, 50, 1);
@@ -11,16 +11,18 @@
 
   &__wrapper {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
     @include breakpointsMaxW($bp-991) {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
   &__right {
-    width: 46%;
+    width: 50%;
 
     @include breakpointsMaxW($bp-991) {
       width: 100%;
@@ -34,6 +36,10 @@
     line-height: 1.6;
     @include adaptive-value('font-size', 17, 15, 1);
 
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: 30px;
+    }
+
     p {
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -42,30 +48,30 @@
   }
 
   &__preview {
-    width: 570px;
-    max-height: 600px;
+    width: 610px;
+    max-height: 655px;
     min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 50%;
-    right: -10px;
+    left: -95px;
     transform: translateY(-50%);
     z-index: -1;
 
     @include breakpointsMaxW(1440px) {
-      right: 15px;
-      width: calc(400px + (570 - 400) * ((100vw - 991px) / (1920 - 991)));
+      left: 0;
+      width: calc(450px + (530 - 450) * ((100vw - 1230px) / (1920 - 1230)));
     }
 
     @include breakpointsMaxW($bp-991) {
-      max-width: 450px;
+      max-width: 400px;
       width: 100%;
       position: static;
       transform: translateY(0);
       margin: 0 auto;
-      max-height: 430px;
+      max-height: 400px;
       min-height: 300px;
     }
 

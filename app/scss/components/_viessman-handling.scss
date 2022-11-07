@@ -1,0 +1,71 @@
+.viessman-handling {
+  font-family: $Circe;
+  color: #575757;
+  position: relative;
+  z-index: 1;
+  @include adaptive-value('margin-top', 80, 40, 1);
+  @include adaptive-value('margin-bottom', 80, 40, 1);
+
+  &::after {
+    @include elDef();
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    gap: 50px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 40px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    letter-spacing: 1.1px;
+    margin-bottom: 25px;
+    max-width: 535px;
+    @include fz45();
+  }
+
+  &__left {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__right {
+    font-weight: 300;
+    padding: 40px 35px;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+    @include adaptive-value('font-size', 17, 15, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      padding: 20px;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      padding: 20px 10px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
