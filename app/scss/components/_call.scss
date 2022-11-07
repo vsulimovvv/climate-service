@@ -23,6 +23,7 @@
       align-items: flex-start;
       gap: 40px;
     }
+
     @include breakpointsMaxW($bp-768) {
       padding-left: 20px;
       padding-right: 20px;
@@ -61,10 +62,13 @@
   &__btn {
     font-family: $Circe;
     font-size: 21px;
-    font-weight: 700;
     color: #191919;
     padding: 25px;
     border-radius: 35px;
+    text-transform: none;
+    max-width: 400px;
+    font-weight: 700;
+
     @include breakpointsMaxW($bp-container) {
       font-size: 18px;
       line-height: 1.2;

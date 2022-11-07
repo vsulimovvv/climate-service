@@ -1,12 +1,19 @@
 .footer {
+  font-family: $Circe;
   padding: 20px 0;
-
   font-size: 13px;
   line-height: 19px;
   font-weight: 400;
   color: #919191;
 
   a {
-    text-decoration: underline;
+    border-bottom: 1px solid var(--color-accent);
+    font-size: 16px;
+    color: var(--color-accent);
+    transition: 300ms ease;
+
+    &:hover {
+      border-color: transparent;
+    }
   }
 }
