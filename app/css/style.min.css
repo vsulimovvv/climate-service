@@ -256,7 +256,7 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::after,*::before{-w
       )}}.guarantee__descr span{display:block}.guarantee--cols{font-family:"Circe"}.guarantee--cols .guarantee__inner{-ms-grid-columns:1fr 500px;grid-template-columns:1fr 500px;gap:60px}@media(max-width: 991.98px){.guarantee--cols .guarantee__inner{-ms-grid-columns:1fr;grid-template-columns:1fr;gap:40px}}@media(max-width: 767.98px){.guarantee--cols .guarantee__inner{gap:30px}}.guarantee--cols .guarantee__text{max-width:100%}@media(max-width: 991.98px){.guarantee--cols .guarantee__list{-ms-grid-columns:(1fr)[2];grid-template-columns:repeat(2, 1fr)}}@media(max-width: 359.98px){.guarantee--cols .guarantee__list{-ms-grid-columns:1fr;grid-template-columns:1fr}}.guarantee--cols .guarantee__title{font-size:26px;font-weight:400;width:90%;margin-bottom:15px}@media(max-width: 1230px){.guarantee--cols .guarantee__title{font-size:calc(
         21px + 5 *
           ((100vw - 375px) / 855)
-      )}}.mounting{font-family:"Circe";padding-bottom:120px}@media(max-width: 1230px){.mounting{padding-bottom:calc(
+      )}}.guarantee--boilers .guarantee__title{font-size:21px}.mounting{font-family:"Circe";padding-bottom:120px}@media(max-width: 1230px){.mounting{padding-bottom:calc(
         70px + 50 *
           ((100vw - 375px) / 855)
       )}}.mounting__title{font-size:45px;color:#2e2e2e;line-height:1.2;font-weight:700;text-align:center;margin-bottom:60px}@media(max-width: 1230px){.mounting__title{font-size:calc(

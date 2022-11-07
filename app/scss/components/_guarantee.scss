@@ -1,7 +1,6 @@
 .guarantee {
   @include adaptive-value('padding-top', 90, 50, 1);
   @include adaptive-value('padding-bottom', 90, 50, 1);
- 
 
   &__title {
     @include fz45();
@@ -135,6 +134,14 @@
         font-weight: 400;
         width: 90%;
         margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--boilers {
+    .guarantee {
+      &__title {
+        font-size: 21px;
       }
     }
   }
